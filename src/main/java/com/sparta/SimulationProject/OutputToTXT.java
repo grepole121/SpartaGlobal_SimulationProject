@@ -19,6 +19,20 @@ public class OutputToTXT {
             e.printStackTrace();
         }
     }
+
+    public static void outputToTXTFinalMonth(HashMap<Integer, int[]> simulationData) {
+        try (BufferedWriter outputToTXT = new BufferedWriter(new FileWriter("resources/SimulationOutput"))) {
+            int[] dataForMonth = simulationData.get(simulationData.size());
+            outputToTXT.write("---Final Month " + simulationData.size() + "---\n");
+            outputToTXT.write("Open Centres: " + dataForMonth[0] + "\n");
+            outputToTXT.write("Full Centres: " + dataForMonth[1] + "\n");
+            outputToTXT.write("Trainees in training: " + dataForMonth[2] + "\n");
+            outputToTXT.write("Trainees on waiting list: " + dataForMonth[3] + "\n\n");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
 }
 
 
