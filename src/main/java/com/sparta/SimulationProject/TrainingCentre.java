@@ -4,7 +4,10 @@ public class TrainingCentre {
     private final int MAX_CAPACITY = 100;
     private int numberOfTraineesInCentre;
 
-    public trainingCentre() {
+
+    private boolean full = false;
+
+    public TrainingCentre() {
     }
 
     public int getMAX_CAPACITY() {
@@ -15,15 +18,19 @@ public class TrainingCentre {
         return numberOfTraineesInCentre;
     }
 
-//    public int newTraineeIntake() {
-//        return RandomClass.randomTraineeIntake();
-//    }
+    public int newTraineeIntake() {
+        return RandomGenerator.randomTraineeIntake();
+    }
 
     public void addTrainees(int traineesEnrolled) {
         numberOfTraineesInCentre += traineesEnrolled;
     }
 
-    public boolean isFull(){
-        return numberOfTraineesInCentre == MAX_CAPACITY;
+    public boolean isFull() {
+        return full;
+    }
+
+    public void setFull(boolean full) {
+        this.full = full;
     }
 }

@@ -21,15 +21,15 @@ public class Simulation {
 //        Every 2 months, Sparta global opens a training centre. They open instantly and can take trainees every month
 
 //        Ask if trainees created at month 0
-        numberOfTraineesOnWaitingList += RandomClass.newTrainees();
+//        numberOfTraineesOnWaitingList += RandomGenerator.newTrainees();
 
-        for (int i = 1; i < lengthOfTime; i++) {
+        for (int i = 1; i <= lengthOfTime; i++) {
 
             // wipes every iteration to start fresh
-            int[] monthlyResult = new int[];
+            int[] monthlyResult = new int[4];
 
             // numberOfTraineesOnWaitingList +=  RandomClass.newTrainees();
-            int tempNewTrainees = RandomClass.newTrainees();
+            int tempNewTrainees = RandomGenerator.newTrainees();
             numberOfTraineesTotal += tempNewTrainees;
             numberOfTraineesOnWaitingList += tempNewTrainees;
 
@@ -40,18 +40,27 @@ public class Simulation {
             for (TrainingCentre trainingCentre : trainingCentreList) {
                 if (!trainingCentre.isFull()) {
                     int newTraineeIntake = trainingCentre.newTraineeIntake();
-                    int traineesInCentre = trainingCentre.getTrainees();
+                    int traineesInCentre = trainingCentre.getNumberOfTraineesInCentre();
                     int freeSpace = maxCapacity - traineesInCentre;
                     if (freeSpace < newTraineeIntake) {
-                        trainingCentre.addTrainees(freeSpace);
-                        numberOfTraineesOnWaitingList -= freeSpace;
-                        //method name needs replaceing to correct method name
-                        trainingCentre.setIsFull(true);
-                        numberOfFullTrainingcentres++;
+                        if (numberOfTraineesOnWaitingList <= freeSpace){
+                            trainingCentre.addTrainees(numberOfTraineesOnWaitingList);
+                            numberOfTraineesOnWaitingList = 0;
+                        }else {
+                            trainingCentre.addTrainees(freeSpace);
+                            numberOfTraineesOnWaitingList -= freeSpace;
+                            trainingCentre.setFull(true);
+                            numberOfFullTrainingcentres++;
+                        }
 
                     } else {
-                        trainingCentre.addTrainees(newTraineeIntake);
-                        numberOfTraineesOnWaitingList -= newTraineeIntake;
+                        if (numberOfTraineesOnWaitingList <= newTraineeIntake){
+                            trainingCentre.addTrainees(numberOfTraineesOnWaitingList);
+                            numberOfTraineesOnWaitingList = 0;
+                        }else {
+                            trainingCentre.addTrainees(newTraineeIntake);
+                            numberOfTraineesOnWaitingList -= newTraineeIntake;
+                        }
                     }
                 }
             }
@@ -63,7 +72,7 @@ public class Simulation {
             monthlyResult[3] = numberOfTraineesOnWaitingList;
 
 
-            result.put(i, monthlyResult)
+            result.put(i, monthlyResult);
 
         }
 
