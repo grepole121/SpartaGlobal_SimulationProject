@@ -46,7 +46,32 @@ public class TrainingCentreTest {
     @Test
     @DisplayName("Test should return true when the training centre is full")
     public void shouldReturnTrue() {
-        trainingCentre.addTrainees(100);
+        trainingCentre.setFull(true);
         assertTrue(trainingCentre.isFull());
     }
+
+    @Test
+    @DisplayName("Test new trainee intake within bounds")
+    public void TestRandomIntakeWithinBounds() {
+        boolean withinBounds = true;
+        for(int i = 0 ; i < 30;i++){
+            int f = trainingCentre.newTraineeIntake();
+            if(f > 20 || f < 0){
+                withinBounds = false;
+            }
+        }
+        Assertions.assertEquals(true, withinBounds);}
+
+
+    @Test
+    @DisplayName("Test new trainee intake outside bounds")
+    public void TestRandomIntakeOutsideBounds() {
+        boolean withinBounds = false;
+        for(int i = 0 ; i < 30;i++){
+            int f = trainingCentre.newTraineeIntake();
+            if(f <= 20 && f >= 0){
+                withinBounds = true;
+            }
+        }
+        Assertions.assertEquals(true, withinBounds);}
 }

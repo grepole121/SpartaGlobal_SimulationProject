@@ -43,7 +43,7 @@ public class Simulation {
                     int traineesInCentre = trainingCentre.getNumberOfTraineesInCentre();
                     int freeSpace = maxCapacity - traineesInCentre;
                     if (freeSpace < newTraineeIntake) {
-                        if (numberOfTraineesOnWaitingList <= freeSpace){
+                        if (numberOfTraineesOnWaitingList < freeSpace){
                             trainingCentre.addTrainees(numberOfTraineesOnWaitingList);
                             numberOfTraineesOnWaitingList = 0;
                         }else {
@@ -54,7 +54,7 @@ public class Simulation {
                         }
 
                     } else {
-                        if (numberOfTraineesOnWaitingList <= newTraineeIntake){
+                        if (numberOfTraineesOnWaitingList < newTraineeIntake){
                             trainingCentre.addTrainees(numberOfTraineesOnWaitingList);
                             numberOfTraineesOnWaitingList = 0;
                         }else {

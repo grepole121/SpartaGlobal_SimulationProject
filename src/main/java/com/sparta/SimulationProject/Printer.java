@@ -20,13 +20,13 @@ public class Printer {
         }
     }
 
-    public static void printFinalMonth(HashMap<Integer, int[]> simulationData) {
+    public static void printFinalMonth (HashMap<Integer, int[]> simulationData) {
         int[] dataForFinalMonth = simulationData.get(simulationData.size());
-        System.out.println("---Final Month " + simulationData.size() + "---");
-        System.out.println("Open Centres: " + dataForFinalMonth[0]);
-        System.out.println("Full Centres: " + dataForFinalMonth[1]);
-        System.out.println("Trainees in Training: " + dataForFinalMonth[2]);
-        System.out.println("Trainees on the Waiting List: " + dataForFinalMonth[3] + "\n");
+        System.out.println("---Final Month " + simulationData.size() + "---\n"
+                + "Open Centres: " + dataForFinalMonth[0] + "\n"
+                + "Full Centres: " + dataForFinalMonth[1] + "\n"
+                + "Trainees in Training: " + dataForFinalMonth[2] + "\n"
+                + "Trainees on the Waiting List: " + dataForFinalMonth[3] + "\n");
 
     }
 }
