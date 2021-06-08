@@ -4,7 +4,7 @@ public class TrainingCentre {
     private final int MAX_CAPACITY = 100;
     private int numberOfTraineesInCentre;
 
-    public TrainingCentre() {
+    public trainingCentre() {
     }
 
     public int getMAX_CAPACITY() {
