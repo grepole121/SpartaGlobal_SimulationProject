@@ -1,7 +1,15 @@
 package com.sparta.SimulationProject.Model;
 
+import java.util.Random;
+
 public enum CourseType {
-    Java,CSharp,DevOps,Data,Business
+    JAVA,CSHARP,DEVOPS,DATA,BUSINESS;
+
+    public static String getRandomCourseType() {
+        Random random = new Random();
+        return (values()[random.nextInt(values().length)]).toString();
+    }
+
 }
 
 
