@@ -1,5 +1,8 @@
 package com.sparta.SimulationProject;
 
+import com.sparta.SimulationProject.Model.Trainee;
+
+import java.util.List;
 import java.util.Random;
 
 public class RandomGenerator {
@@ -9,8 +12,8 @@ public class RandomGenerator {
         return rand.nextInt(20);
     }
 
-    public static int newTrainees(){
+    public static List<Trainee> newTrainees(){
         Random rand = new Random();
-        return (rand.nextInt(10) + 20);
+        return new List<Trainee>();
     }
 }

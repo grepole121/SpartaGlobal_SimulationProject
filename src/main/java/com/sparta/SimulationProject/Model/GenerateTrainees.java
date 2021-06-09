@@ -9,7 +9,7 @@ public class GenerateTrainees {
 
     public static List<Trainee> generateTrainees(int newTraineeCount){
         List<Trainee> trainees = new ArrayList<>();
-        trainees.add(new Trainee(traineeID++,))
+        trainees.add(new Trainee(traineeID++, CourseType.CSharp));
+        return trainees;
     }
-
 }
