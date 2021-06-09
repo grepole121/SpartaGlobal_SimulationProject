@@ -1,5 +1,14 @@
 package com.sparta.SimulationProject.Model;
 
+public abstract Centre {
+
+    public int getMAX_CAPACITY();
+    public int getNumberOfTraineesInCentre();
+    public int newTraineeIntake();
+    public void addTrainees(int traineesEnrolled);
+    public boolean isFull();
+    public void setFull(boolean full);
+
 import com.sparta.SimulationProject.RandomGenerator;
 
 public class Centre {
@@ -34,6 +43,5 @@ public class Centre {
             return false;
         }
     }
-
 
 }
