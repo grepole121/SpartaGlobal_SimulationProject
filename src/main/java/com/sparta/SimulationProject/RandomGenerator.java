@@ -14,7 +14,7 @@ public class RandomGenerator {
         return rand.nextInt(20);
     }
 
-    public static int newTrainees(){
+    public static List<Trainee> newTrainees() {
         Random rand = new Random();
         return GenerateTrainees.generateTrainees((rand.nextInt(10) + 20));
 
