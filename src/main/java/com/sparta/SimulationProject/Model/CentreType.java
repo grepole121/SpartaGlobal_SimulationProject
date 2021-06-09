@@ -5,9 +5,17 @@ import java.util.Random;
 public enum CentreType {
     TRAININGHUB,TECHCENTRE,BOOTCAMP;
 
-    public static String getRandomCentreType() {
+    public static CentreType getRandomCentreType() {
         Random random = new Random();
-        return (values()[random.nextInt(values().length)]).toString();
+        int centreType = random.nextInt(2);
+        if(centreType == 2){
+            return BOOTCAMP;
+        }
+        else if(centreType == 1){
+            return TECHCENTRE;
+        }
+        else{
+            return TRAININGHUB;
+        }
     }
 }
-
