@@ -3,36 +3,18 @@ package com.sparta.SimulationProject.Model;
 
 import com.sparta.SimulationProject.RandomGenerator;
 
-public class Centre {
+public interface Centre {
 
-    final int MAX_CAPACITY = 100;
-    int numberOfTraineesInCentre = 0;
-    boolean full = false;
+//    final int MAX_CAPACITY = 100;
+//    int numberOfTraineesInCentre = 0;
+//    boolean full = false;
 
-    public int getMAX_CAPACITY() {
-        return MAX_CAPACITY;
-    };
-    public int getNumberOfTraineesInCentre() {
-        return numberOfTraineesInCentre;
-    };
-//    public int newTraineeIntake() {
-//        return RandomGenerator.randomTraineeIntake();
-//    }
-    public void addTrainees(int traineesEnrolled) {
-        numberOfTraineesInCentre += traineesEnrolled;
-    }
-    public boolean isFull() {
-        return full;
-    }
-    public void setFull(boolean full) {
-        this.full = full;
-    }
-    public boolean lowCapacity() {
-        if (numberOfTraineesInCentre < 10) {
-            return true;
-        } else {
-            return false;
-        }
-    }
+    public int getMAX_CAPACITY();
+    public int getNumberOfTraineesInCentre();
+    public int newTraineeIntake();
+    public void addTrainees(int traineesEnrolled);
+    public boolean isFull();
+    public void setFull(boolean full);
+    public boolean lowCapacity();
 
 }
