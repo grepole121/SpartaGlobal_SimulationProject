@@ -10,6 +10,7 @@ public enum CourseType {
         return (values()[random.nextInt(values().length)]).toString();
     }
 
+
 }
 
 

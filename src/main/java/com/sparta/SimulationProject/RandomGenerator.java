@@ -1,5 +1,6 @@
 package com.sparta.SimulationProject;
 
+<<<<<<< HEAD
 import com.sparta.SimulationProject.Model.Centre;
 import com.sparta.SimulationProject.Model.CentreType;
 import com.sparta.SimulationProject.Model.GenerateTrainees;

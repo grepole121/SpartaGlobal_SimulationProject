@@ -12,9 +12,10 @@ public interface Centre {
     public int getMAX_CAPACITY();
     public int getNumberOfTraineesInCentre();
     public int newTraineeIntake();
-    public void addTrainees(int traineesEnrolled);
+    public void addTrainees(Trainee traineesEnrolled);
     public boolean isFull();
     public void setFull(boolean full);
     public boolean lowCapacity();
+    public Centre getCentreType();
 
 }
