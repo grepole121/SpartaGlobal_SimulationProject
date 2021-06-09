@@ -2,15 +2,15 @@ package com.sparta.SimulationProject;
 
 public class FinalData {
 
-    public int[] closedCentres;
+    private int[] closedCentres;
 
-    public int[] openCentres;
+    private int[] openCentres;
 
-    public int[] fullCentres;
+    private int[] fullCentres;
 
-    public int[] traineesTraining;
+    private int[] traineesTraining;
 
-    public int traineesOnWaitingList;
+    private int traineesOnWaitingList;
 
     public int[] getClosedCentres() {
         return closedCentres;
