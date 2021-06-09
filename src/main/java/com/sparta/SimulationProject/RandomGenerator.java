@@ -1,5 +1,10 @@
 package com.sparta.SimulationProject;
 
+import com.sparta.SimulationProject.Model.CentreType;
+import com.sparta.SimulationProject.Model.GenerateTrainees;
+import com.sparta.SimulationProject.Model.Trainee;
+
+import java.util.List;
 import java.util.Random;
 
 public class RandomGenerator {
@@ -11,6 +16,13 @@ public class RandomGenerator {
 
     public static int newTrainees(){
         Random rand = new Random();
-        return (rand.nextInt(10) + 20);
+        return GenerateTrainees.generateTrainees((rand.nextInt(10) + 20));
+
+    }
+
+    public static String randomCentre() {
+        return CentreType.getRandomCentreType();
     }
 }
+
+
