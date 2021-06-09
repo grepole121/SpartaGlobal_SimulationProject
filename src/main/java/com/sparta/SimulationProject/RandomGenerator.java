@@ -28,7 +28,7 @@ public class RandomGenerator {
     public static CentreType[] randomCentre() {
         CentreType type = CentreType.getRandomCentreType();
         if( type.equals(CentreType.TRAININGHUB)){
-            centres.add(Centre CentreNumber = new trainingHub);
+            centres.add(Centre CentreNumber = new trainingHub());
             CentreNumber++;
             centres.add(Centre CentreNumber = new trainingHub);
             CentreNumber++;
