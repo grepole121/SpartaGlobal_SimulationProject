@@ -1,6 +1,6 @@
 package com.sparta.SimulationProject.Model;
 
-public interface Centre {
+public abstract Centre {
 
     public int getMAX_CAPACITY();
     public int getNumberOfTraineesInCentre();

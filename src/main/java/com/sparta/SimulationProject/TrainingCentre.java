@@ -11,6 +11,7 @@ public class TrainingCentre implements Centre {
 
     public TrainingCentre() {
     }
+
     @Override
     public int getMAX_CAPACITY() {
         return MAX_CAPACITY;
