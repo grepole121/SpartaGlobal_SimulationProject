@@ -2,7 +2,7 @@ package com.sparta.SimulationProject;
 
 import com.sparta.SimulationProject.Model.Centre;
 
-public class TrainingCentre implements Centre {
+public class TrainingCentre extends Centre {
     private final int MAX_CAPACITY = 100;
     private int numberOfTraineesInCentre;
 

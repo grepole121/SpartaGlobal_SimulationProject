@@ -1,6 +1,8 @@
-package com.sparta.SimulationProject.Model;
+package com.sparta.SimulationProject;
 
-public class Bootcamp extends Centre{
+import com.sparta.SimulationProject.Model.Centre;
+
+public class Bootcamp extends Centre {
 
     private int numberOfTraineesInCentre = 0;
     private final int MAX_CAPACITY = 200;
