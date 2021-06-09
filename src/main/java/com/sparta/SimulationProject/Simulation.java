@@ -14,12 +14,14 @@ public class Simulation {
     private List<Centre> trainingCentreList = new ArrayList<>();
     private LinkedList<Trainee> waitingList = new LinkedList<>();
     private int[] traineesTraining = new int[5];
-    // private int[] totalCentreTypes = new int[3];
+    private int[] traineesOnWaitingList = new int[5];
+    private int[] traineesInCentres = new int[5];
+    private int[] totalCentresFull = new int[3];
     private int[] totalCentresOpen = new int[3];
     private int[] totalCentresClosed = new int[3];
 
 
-    public HashMap<Integer, int[]> runSimulation(int lengthOfTime) {
+    public void runSimulation(int lengthOfTime) {
         HashMap<Integer, int[]> result = new HashMap<>();
 
 //        First training centre created at month 1
@@ -34,24 +36,25 @@ public class Simulation {
             waitingList.addAll(tempTrainees);
             // tracks number of trainees by each stream
             for (Trainee trainee : tempTrainees) {
-                switch (trainee.getCourseType()) {
-                    case DATA:
-                        traineesTraining[CourseType.DATA.ordinal()]++;
-                        break;
-                    case JAVA:
-                        traineesTraining[CourseType.JAVA.ordinal()]++;
-                        break;
-                    case CSHARP:
-                        traineesTraining[CourseType.CSHARP.ordinal()]++;
-                        break;
-                    case DEVOPS:
-                        traineesTraining[CourseType.DEVOPS.ordinal()]++;
-                        break;
-                    case BUSINESS:
-                        traineesTraining[CourseType.BUSINESS.ordinal()]++;
-                        break;
+                traineesTraining[trainee.getCourseType().ordinal()]++;
+//                switch (trainee.getCourseType()) {
+//                    case DATA:
+//                        traineesTraining[CourseType.DATA.ordinal()]++;
+//                        break;
+//                    case JAVA:
+//                        traineesTraining[CourseType.JAVA.ordinal()]++;
+//                        break;
+//                    case CSHARP:
+//                        traineesTraining[CourseType.CSHARP.ordinal()]++;
+//                        break;
+//                    case DEVOPS:
+//                        traineesTraining[CourseType.DEVOPS.ordinal()]++;
+//                        break;
+//                    case BUSINESS:
+//                        traineesTraining[CourseType.BUSINESS.ordinal()]++;
+//                        break;
 
-                }
+  //              }
             }
 
 
@@ -61,24 +64,23 @@ public class Simulation {
             // numberOfTraineesOnWaitingList +=  RandomClass.newTrainees();
 //            int tempNewTrainees = RandomGenerator.newTrainees();
             //waitingList = GenerateTrainees(tempNewTrainees);
-            numberOfTraineesTotal += tempNewTrainees;
-            numberOfTraineesOnWaitingList += tempNewTrainees;
+//            numberOfTraineesTotal += tempNewTrainees;
+//            numberOfTraineesOnWaitingList += tempNewTrainees;
 
-            if (i % 2 == 1) {
+            if (month % 2 == 1) {
                 // need method for generating a random centre
-                List<Centre> tempCentre = new Centre();
+                List<Centre> tempCentre = RandomGenerator.randomCentre();
                 switch (tempCentre.get(0).getCentreType()) {
-                    case CentreType.TRAININGHUB:
+                    case TRAININGHUB:
                         totalCentresOpen[CentreType.TRAININGHUB.ordinal()] += 3;
                         break;
-                    case CentreType.TECHCENTRE:
+                    case TECHCENTRE:
                         totalCentresOpen[CentreType.TECHCENTRE.ordinal()]++;
                         break;
-                    case CentreType.BOOTCAMP:
+                    case BOOTCAMP:
                         totalCentresOpen[CentreType.BOOTCAMP.ordinal()]++;
                         break;
                 }
-
                 trainingCentreList.addAll(tempCentre);
             }
             Collections.shuffle(trainingCentreList);
@@ -152,37 +154,64 @@ public class Simulation {
                                         if (waitingList.get(secondCounter).getCourseType().equals(trainingCentre.getCentreType())) {
                                             trainingCentre.addTrainees(waitingList.get(secondCounter));
                                             waitingList.remove(secondCounter);
-                                            break;
+                                            continue;
                                         }
                                     }
                                 }
                             }
                         }
                     }
+                }else { // centre is full
+                    totalCentresFull[trainingCentre.getCentreType().ordinal()]++;
                 }
+
 
                 //check for closeures
 
             }//for loop ends
             for (i = 0; i < trainingCentreList.size(); i++) {
                 if (trainingCentreList.get(i).lowCapacity()) {
-                    switch (trainingCentreList.getCentreType()) {
-                        case CentreType.TRAININGHUB:
+                    switch (trainingCentreList.get(i).getCentreType()) {
+                        case TRAININGHUB:
                             totalCentresClosed[CentreType.TRAININGHUB.ordinal()]++;
                             totalCentresOpen[CentreType.TRAININGHUB.ordinal()]--;
                             break;
-                        case CentreType.TECHCENTRE:
+                        case TECHCENTRE:
                             totalCentresClosed[CentreType.TECHCENTRE.ordinal()]++;
                             totalCentresOpen[CentreType.TECHCENTRE.ordinal()]--;
                             break;
-                        case CentreType.BOOTCAMP:
+                        case BOOTCAMP:
                             totalCentresClosed[CentreType.BOOTCAMP.ordinal()]++;
                             totalCentresOpen[CentreType.TECHCENTRE.ordinal()]--;
                             break;
                     }
+                    trainingCentreList.remove(i);
                 }
             }
-            FinalDate.addOpenCentres(new HashMap<Integer, int[] >(month, totalCentresOpen))
+            for (Trainee trainee : waitingList) {
+                traineesOnWaitingList[trainee.getCourseType().ordinal()]++;
+            }
+            for(int j =0; j<5;j++) {
+                traineesInCentres[j]=traineesTraining[j]-traineesOnWaitingList[j];
+            }
+
+            HashMap<Integer, int[]> centresClosed = new HashMap<>();
+            centresClosed.put(month, totalCentresClosed);
+            FinalData.addToClosedCentres(centresClosed);
+            HashMap<Integer,int[]> openCentres = new HashMap<>();
+            openCentres.put(month,totalCentresOpen);
+            FinalData.addToOpenCentres(openCentres);
+            HashMap<Integer,int[]> fullCentres = new HashMap<>();
+            fullCentres.put(month,totalCentresFull);
+            FinalData.addToFullCentres(fullCentres);
+            HashMap<Integer,int[]> traineesInTraining = new HashMap<>();
+            traineesInTraining.put(month,traineesInCentres);
+            FinalData.addToTraineesTraining(traineesInTraining);
+            HashMap<Integer,int[]> waitingListTraineeCount = new HashMap<>();
+            waitingListTraineeCount.put(month,traineesOnWaitingList);
+            FinalData.addToTraineesOnWaitingList(waitingListTraineeCount);
+
+
 
             //end of Monthly for loop
         }
@@ -190,19 +219,19 @@ public class Simulation {
 
         // results to be displayed are num open centers, num full centers, num trainees currently training, num trainees on waiting list
 
-        monthlyResult[0] = numberOfTrainingCentres;
+//        monthlyResult[0] = numberOfTrainingCentres;
+//
+//        monthlyResult[1] = numberOfFullTrainingCentres;
+//        monthlyResult[2] = numberOfTraineesCurrentlyTraining;
+//        monthlyResult[3] = numberOfTraineesOnWaitingList;
+//
 
-        monthlyResult[1] = numberOfFullTrainingCentres;
-        monthlyResult[2] = numberOfTraineesCurrentlyTraining;
-        monthlyResult[3] = numberOfTraineesOnWaitingList;
-
-
-        result.put(i, monthlyResult);
+    //    result.put(i, monthlyResult);
 //month ends
     }
 
-        return result;
+   //     return result;
 }
 
 
-}
+

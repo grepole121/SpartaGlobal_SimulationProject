@@ -16,7 +16,7 @@ public class Printer {
             System.out.println("Open Centres: " + dataForMonth[0]);
             System.out.println("Full Centres: " + dataForMonth[1]);
             System.out.println("Trainees in Training: " + dataForMonth[2]);
-            System.out.println("Trainees on the Waiting List: " + dataForMonth[3] + "\n");
+       //     System.out.println("Trainees on the Waiting List: " + dataForMonth[3] + "\n");
         }
     }
 

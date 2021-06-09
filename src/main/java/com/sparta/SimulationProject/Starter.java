@@ -2,6 +2,8 @@ package com.sparta.SimulationProject;
 
 import java.util.HashMap;
 
+import static com.sparta.SimulationProject.FinalData.getClosedCentres;
+
 public class Starter {
 
     static private int time;
@@ -26,7 +28,10 @@ public class Starter {
         }
 
         Simulation sim = new Simulation();
-        HashMap<Integer, int[]> data = sim.runSimulation(time);
+        //HashMap<Integer, int[]> data = sim.runSimulation(time);
+        sim.runSimulation(time);
+       HashMap<Integer,int[]> output= FinalData.getOpenCentres();
+       Printer.print(output);
 
         boolean finalMonth = false;
         Printer.print("Press 1 for printing month breakdown, Press 2 for printing just the final month: ");
@@ -39,30 +44,30 @@ public class Starter {
             Printer.print("Congratulations you are incompetent");
         }
 
-        Printer.print("Press 1 for printing to console, Press 2 for outputting to text file, Press 3 for a both: ");
-        int selectionOutput = UserInput.inputInt();
-        if (selectionOutput == 1) {
-            if (finalMonth) {
-                Printer.printFinalMonth(data);
-                OutputToTXT.outputToTXTFinalMonth(data);
-            } else {
-                Printer.print(data);
-                OutputToTXT.outputToTXT(data);
-            }
-        } else if (selectionOutput == 2) {
-            OutputToTXT.outputToTXT(data);
-        } else if (selectionOutput == 3) {
-
-            if (finalMonth) {
-                Printer.printFinalMonth(data);
-                OutputToTXT.outputToTXTFinalMonth(data);
-            } else {
-                OutputToTXT.outputToTXT(data);
-                Printer.print(data);
-            }
-        } else {
-            Printer.print("Congratulations you are incompetent");
-        }
+//        Printer.print("Press 1 for printing to console, Press 2 for outputting to text file, Press 3 for a both: ");
+//        int selectionOutput = UserInput.inputInt();
+//        if (selectionOutput == 1) {
+//            if (finalMonth) {
+//                Printer.printFinalMonth(data);
+//                OutputToTXT.outputToTXTFinalMonth(data);
+//            } else {
+//                Printer.print(data);
+//                OutputToTXT.outputToTXT(data);
+//            }
+//        } else if (selectionOutput == 2) {
+//            OutputToTXT.outputToTXT(data);
+//        } else if (selectionOutput == 3) {
+//
+//            if (finalMonth) {
+//                Printer.printFinalMonth(data);
+//                OutputToTXT.outputToTXTFinalMonth(data);
+//            } else {
+//                OutputToTXT.outputToTXT(data);
+//                Printer.print(data);
+//            }
+//        } else {
+//            Printer.print("Congratulations you are incompetent");
+//        }
 
 
     }

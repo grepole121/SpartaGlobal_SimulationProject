@@ -1,10 +1,7 @@
 package com.sparta.SimulationProject;
 
-<<<<<<< HEAD
-import com.sparta.SimulationProject.Model.Centre;
-import com.sparta.SimulationProject.Model.CentreType;
-import com.sparta.SimulationProject.Model.GenerateTrainees;
-import com.sparta.SimulationProject.Model.Trainee;
+
+import com.sparta.SimulationProject.Model.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,8 +10,8 @@ import java.util.Random;
 public class RandomGenerator {
 
     static int numberOfBootcamps = 0;
-    static List<Centre> centres = new ArrayList<>();
-    static int CentreNumber = 0;
+
+
 
     public static int randomTraineeIntake(){
         Random rand = new Random();
@@ -26,27 +23,25 @@ public class RandomGenerator {
         return GenerateTrainees.generateTrainees((rand.nextInt(10) + 20));
     }
 
-    public static CentreType[] randomCentre() {
+    public static List<Centre> randomCentre() {
+        List<Centre> centres = new ArrayList<>();
         CentreType type = CentreType.getRandomCentreType();
         if( type.equals(CentreType.TRAININGHUB)){
-            centres.add(Centre CentreNumber = new trainingHub());
-            CentreNumber++;
-            centres.add(Centre CentreNumber = new trainingHub);
-            CentreNumber++;
-            centres.add(Centre CentreNumber = new trainingHub);
-            CentreNumber++;
+            centres.add( new TrainingHub());
+            centres.add( new TrainingHub());
+            centres.add( new TrainingHub());
         }
         else if (type.equals(CentreType.TECHCENTRE)){
-            centres.add(Centre CentreNumber = new techCentre);
+            centres.add( new TechCentre(CourseType.getRandomCourseType()));
         }
         else if (type.equals(CentreType.BOOTCAMP) && numberOfBootcamps < 2){
-            centres.add(Centre CentreNumber = new bootCamp);
-            CentreNumber++;
+            centres.add(new Bootcamp());
             numberOfBootcamps++;
         }
         else{
-            randomCentre();
+            return randomCentre();
         }
+        return centres;
     }
 }
 

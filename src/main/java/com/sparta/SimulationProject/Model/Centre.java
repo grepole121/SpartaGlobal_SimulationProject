@@ -16,6 +16,6 @@ public interface Centre {
     public boolean isFull();
     public void setFull(boolean full);
     public boolean lowCapacity();
-    public Centre getCentreType();
+    public CentreType getCentreType();
 
 }

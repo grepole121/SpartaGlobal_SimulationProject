@@ -1,14 +1,20 @@
 package com.sparta.SimulationProject;
 
 import com.sparta.SimulationProject.Model.Centre;
+import com.sparta.SimulationProject.Model.CentreType;
+import com.sparta.SimulationProject.Model.Trainee;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Bootcamp implements Centre {
 
     private int numberOfTraineesInCentre = 0;
     private final int MAX_CAPACITY = 500;
+    private final CentreType centreType = CentreType.BOOTCAMP;
     private int counterLowCapacity = 0;
     private boolean full = false;
-
+    private List<Trainee> currentTrainees = new ArrayList<>();
     public Bootcamp() {
     }
 
@@ -28,8 +34,8 @@ public class Bootcamp implements Centre {
     }
 
     @Override
-    public void addTrainees(int traineesEnrolled) {
-        numberOfTraineesInCentre += traineesEnrolled;
+    public void addTrainees(Trainee traineesEnrolled) {
+        currentTrainees.add(traineesEnrolled);
     }
 
     @Override
@@ -51,5 +57,10 @@ public class Bootcamp implements Centre {
             counterLowCapacity =0;
         }
         return false;
+    }
+
+    @Override
+    public CentreType getCentreType() {
+        return this.centreType;
     }
 }

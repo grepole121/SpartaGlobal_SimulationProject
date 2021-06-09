@@ -5,9 +5,27 @@ import java.util.Random;
 public enum CourseType {
     JAVA,CSHARP,DEVOPS,DATA,BUSINESS;
 
-    public static String getRandomCourseType() {
+    public static CourseType getRandomCourseType() {
         Random random = new Random();
-        return (values()[random.nextInt(values().length)]).toString();
+         switch (random.nextInt(5)){
+
+             case 0:
+                 return JAVA;
+
+             case 1:
+                 return CSHARP;
+
+             case 2:
+                 return DEVOPS;
+
+             case 3:
+                 return DATA;
+
+             case 4:
+                 return BUSINESS;
+
+         }
+         return null;
     }
 
 

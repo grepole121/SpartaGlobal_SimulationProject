@@ -28,12 +28,12 @@ public class TrainingHubTest {
         Assertions.assertEquals(0, trainingHub.getNumberOfTraineesInCentre());
     }
 
-    @Test
-    @DisplayName("Test should return the number of trainees after trainees have been added")
-    public void shouldReturn15() {
-        trainingHub.addTrainees(15);
-        Assertions.assertEquals(15, trainingHub.getNumberOfTraineesInCentre());
-    }
+//    @Test
+//    @DisplayName("Test should return the number of trainees after trainees have been added")
+//    public void shouldReturn15() {
+//        trainingHub.addTrainees(15);
+//        Assertions.assertEquals(15, trainingHub.getNumberOfTraineesInCentre());
+//    }
 
     @Test
     @DisplayName("Test should return false when the training centre is not full")
