@@ -9,7 +9,7 @@ import java.util.List;
 
 public class Bootcamp implements Centre {
 
-    private int numberOfTraineesInCentre = 0;
+    private int numberOfTraineesInCentre;
     private final int MAX_CAPACITY = 500;
     private final CentreType centreType = CentreType.BOOTCAMP;
     private int counterLowCapacity = 0;
@@ -36,6 +36,7 @@ public class Bootcamp implements Centre {
     @Override
     public void addTrainees(Trainee traineesEnrolled) {
         currentTrainees.add(traineesEnrolled);
+        numberOfTraineesInCentre++;
     }
 
     @Override
@@ -49,11 +50,11 @@ public class Bootcamp implements Centre {
     }
 
     public boolean lowCapacity(){
-        if(numberOfTraineesInCentre < 10 && counterLowCapacity == 3){
+        if(numberOfTraineesInCentre < 10 && counterLowCapacity == 2){
             return true;
-        } else if (numberOfTraineesInCentre < 10) {
+        } else if (numberOfTraineesInCentre < 10 && counterLowCapacity < 2) {
             counterLowCapacity++;
-        } else {
+        } else if (numberOfTraineesInCentre >= 10) {
             counterLowCapacity =0;
         }
         return false;
@@ -62,5 +63,10 @@ public class Bootcamp implements Centre {
     @Override
     public CentreType getCentreType() {
         return this.centreType;
+    }
+
+    @Override
+    public List<Trainee> getCurrentTrainees() {
+        return currentTrainees;
     }
 }

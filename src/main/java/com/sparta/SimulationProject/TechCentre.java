@@ -29,7 +29,7 @@ public class TechCentre implements Centre {
 
     @Override
     public int getNumberOfTraineesInCentre() {
-        return currentTrainees.size();
+        return numberOfTraineesInCentre;
     }
 
     @Override
@@ -40,6 +40,7 @@ public class TechCentre implements Centre {
     @Override
     public void addTrainees(Trainee traineesEnrolled) {
         currentTrainees.add(traineesEnrolled);
+        numberOfTraineesInCentre++;
     }
 
     @Override
@@ -62,5 +63,12 @@ public class TechCentre implements Centre {
         return this.centreType;
     }
 
+    public CourseType getCourseType() {
+        return this.courseType;
+    }
 
+    @Override
+    public List<Trainee> getCurrentTrainees() {
+        return currentTrainees;
+    }
 }
