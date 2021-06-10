@@ -10,16 +10,15 @@ import java.util.List;
 
 public class TechCentre implements Centre {
 
-    private int numberOfTraineesInCentre;
+    private final int numberOfTraineesInCentre;
     private final int MAX_CAPACITY = 200;
     private final CentreType centreType = CentreType.TECHCENTRE;
     private final CourseType courseType;
     private boolean full = false;
-    private List<Trainee> currentTrainees = new ArrayList<>();
+    private final List<Trainee> currentTrainees = new ArrayList<>();
 
 
-
-    public TechCentre (CourseType courseType) {
+    public TechCentre(CourseType courseType) {
         this.numberOfTraineesInCentre = 0;
         this.courseType = courseType;
     }

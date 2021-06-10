@@ -31,10 +31,6 @@ public class Starter {
         //HashMap<Integer, int[]> data = sim.runSimulation(time);
         sim.runSimulation(time);
 
-        HashMap<Integer,int[]> output= FinalData.getTraineesTraining();
-        Printer.print(output);
-
-
         boolean finalMonth = false;
         Printer.print("Press 1 for printing month breakdown, Press 2 for printing just the final month: ");
         int selectionOutputMonth = UserInput.inputInt();

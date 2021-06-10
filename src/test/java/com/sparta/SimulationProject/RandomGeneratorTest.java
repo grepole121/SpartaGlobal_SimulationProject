@@ -12,6 +12,7 @@ import java.util.List;
 
 public class RandomGeneratorTest {
 
+
     @Test
     @DisplayName("TestRandomTraineesWithinBounds")
     public void TestRandomTraineesWithinBounds() {
@@ -54,28 +55,31 @@ public class RandomGeneratorTest {
 
 
 
+
     @Test
     @DisplayName("TestRandomIntakeWithinBounds")
     public void TestRandomIntakeWithinBounds() {
         boolean withinBounds = true;
-        for(int i = 0 ; i < 30;i++){
+        for (int i = 0; i < 30; i++) {
             int f = RandomGenerator.randomTraineeIntake();
-            if(f > 20 || f < 0){
+            if (f > 20 || f < 0) {
                 withinBounds = false;
             }
         }
-        Assertions.assertEquals(true, withinBounds);}
+        Assertions.assertEquals(true, withinBounds);
+    }
 
 
     @Test
     @DisplayName("TestRandomIntakeOutsideBounds")
     public void TestRandomIntakeOutsideBounds() {
         boolean withinBounds = false;
-        for(int i = 0 ; i < 30;i++){
+        for (int i = 0; i < 30; i++) {
             int f = RandomGenerator.randomTraineeIntake();
-            if(f <= 20 && f >= 0){
+            if (f <= 20 && f >= 0) {
                 withinBounds = true;
             }
         }
-        Assertions.assertEquals(true, withinBounds);}
+        Assertions.assertEquals(true, withinBounds);
+    }
 }

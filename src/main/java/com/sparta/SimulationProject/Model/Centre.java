@@ -11,18 +11,25 @@ public interface Centre {
 //    int numberOfTraineesInCentre = 0;
 //    boolean full = false;
 
-    public int getMAX_CAPACITY();
-    public int getNumberOfTraineesInCentre();
-    public int newTraineeIntake();
-    public void addTrainees(Trainee traineesEnrolled);
-    public boolean isFull();
-    public void setFull(boolean full);
-    public boolean lowCapacity();
-    public CentreType getCentreType();
 
+    int getMAX_CAPACITY();
 
+    int getNumberOfTraineesInCentre();
 
-    public CourseType getCourseType();
-    public List<Trainee> getTrainees();
+    int newTraineeIntake();
+
+    void addTrainees(Trainee traineesEnrolled);
+
+    boolean isFull();
+
+    void setFull(boolean full);
+
+    boolean lowCapacity();
+
+    CentreType getCentreType();
+
+    CourseType getCourseType();
+
+    List<Trainee> getTrainees();
 
 }
