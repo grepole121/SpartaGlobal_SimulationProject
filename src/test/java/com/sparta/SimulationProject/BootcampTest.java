@@ -89,13 +89,13 @@ public class BootcampTest {
         Assertions.assertEquals(CentreType.BOOTCAMP, bootCamp.getCentreType());
     }
 
-    @Test
-    @DisplayName("Test should return the list of current trainees")
-    public void shouldReturnCurrentTrainees() {
-        Trainee trainee = new Trainee(1, CourseType.CSHARP);
-        bootCamp.addTrainees(trainee);
-        List<Trainee> trainees = new ArrayList<>();
-        trainees.add(trainee);
-        Assertions.assertEquals(trainees, bootCamp.getCurrentTrainees());
-    }
+//    @Test
+//    @DisplayName("Test should return the list of current trainees")
+//    public void shouldReturnCurrentTrainees() {
+//        Trainee trainee = new Trainee(1, CourseType.CSHARP);
+//        bootCamp.addTrainees(trainee);
+//        List<Trainee> trainees = new ArrayList<>();
+//        trainees.add(trainee);
+//        Assertions.assertEquals(trainees, bootCamp.getCurrentTrainees());
+//    }
 }

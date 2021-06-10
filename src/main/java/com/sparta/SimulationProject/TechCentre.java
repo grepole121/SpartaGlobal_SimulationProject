@@ -10,7 +10,7 @@ import java.util.List;
 
 public class TechCentre implements Centre {
 
-    private final int numberOfTraineesInCentre;
+    private int numberOfTraineesInCentre;
     private final int MAX_CAPACITY = 200;
     private final CentreType centreType = CentreType.TECHCENTRE;
     private final CourseType courseType;

@@ -77,13 +77,13 @@ public class TrainingHubTest {
         Assertions.assertEquals(CentreType.TRAININGHUB, trainingHub.getCentreType());
     }
 
-    @Test
-    @DisplayName("Test should return the list of current trainees")
-    public void shouldReturnCurrentTrainees() {
-        Trainee trainee = new Trainee(1, CourseType.CSHARP);
-        trainingHub.addTrainees(trainee);
-        List<Trainee> trainees = new ArrayList<>();
-        trainees.add(trainee);
-        Assertions.assertEquals(trainees, trainingHub.getCurrentTrainees());
-    }
+//    @Test
+//    @DisplayName("Test should return the list of current trainees")
+//    public void shouldReturnCurrentTrainees() {
+//        Trainee trainee = new Trainee(1, CourseType.CSHARP);
+//        trainingHub.addTrainees(trainee);
+//        List<Trainee> trainees = new ArrayList<>();
+//        trainees.add(trainee);
+//        Assertions.assertEquals(trainees, trainingHub.getCurrentTrainees());
+//    }
 }
