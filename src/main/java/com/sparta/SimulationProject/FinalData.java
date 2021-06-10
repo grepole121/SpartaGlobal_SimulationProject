@@ -73,9 +73,11 @@ public class FinalData {
     public static void addToTraineesOnWaitingList(HashMap<Integer, int[]> traineesOnWaitingListInput) {
         traineesOnWaitingList.putAll(traineesOnWaitingListInput);
     }
+
     public static void addToTraineesPerCentreType(HashMap<Integer, int[]> traineeTypes) {
         traineesCourseTypes.putAll(traineeTypes);
     }
+
     public static int[] getToTraineesPerCentreType(int i) {
         int[] dataForMonth = traineesCourseTypes.get(i);
         return dataForMonth;

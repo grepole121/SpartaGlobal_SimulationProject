@@ -1,38 +1,36 @@
-//package com.sparta.SimulationProject;
+package com.sparta.SimulationProject;
+
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+
+import java.util.HashMap;
+
+public class TestFinalData {
+
+//    private HashMap<Integer, int[]> closedCentres = new HashMap<>();
 //
-//import org.junit.jupiter.api.Assertions;
-//import org.junit.jupiter.api.BeforeEach;
-//import org.junit.jupiter.api.DisplayName;
-//import org.junit.jupiter.api.Test;
+//    private HashMap<Integer, int[]> openCentres = new HashMap<>();
 //
-//import java.util.HashMap;
+//    private HashMap<Integer, int[]> fullCentres = new HashMap<>();
 //
-//public class TestFinalData {
+//    private HashMap<Integer, int[]> traineesTraining = new HashMap<>();
 //
-////    private HashMap<Integer, int[]> closedCentres = new HashMap<>();
-////
-////    private HashMap<Integer, int[]> openCentres = new HashMap<>();
-////
-////    private HashMap<Integer, int[]> fullCentres = new HashMap<>();
-////
-////    private HashMap<Integer, int[]> traineesTraining = new HashMap<>();
-////
-////    private HashMap<Integer, int[]> traineesOnWaitingList = new HashMap<>();
-//
-//
-//
-//    @Test
-//    @DisplayName("Test adding and retrieving from closed centres")
-//    public void testClosedCentres() {
-//        HashMap<Integer, int[]> test = new HashMap<>();
-//        int[] input = {1,2,3};
-//        test.put(1, input);
-//        FinalData.addToClosedCentres(test);
-//        HashMap<Integer, int[]> output = FinalData.getClosedCentres();
-//        int[] out = output.get(1);
-//        Assertions.assertEquals(input, out);
-//    }
-//
+//    private HashMap<Integer, int[]> traineesOnWaitingList = new HashMap<>();
+
+
+    @Test
+    @DisplayName("Test adding and retrieving from closed centres")
+    public void testClosedCentres() {
+        HashMap<Integer, int[]> test = new HashMap<>();
+        int[] input = {1, 2, 3};
+        test.put(1, input);
+        FinalData.addToClosedCentres(test);
+        HashMap<Integer, int[]> output = FinalData.getClosedCentres();
+        int[] out = output.get(1);
+        Assertions.assertEquals(input, out);
+    }
+
 //    @Test
 //    @DisplayName("Test adding and retrieving from open centres")
 //    public void testOpenCentres() {
@@ -56,19 +54,19 @@
 //        int[] out = output.get(1);
 //        Assertions.assertEquals(input, out);
 //    }
-//
-//    @Test
-//    @DisplayName("Test adding and retrieving from open centres")
-//    public void testTraineesTraining() {
-//        HashMap<Integer, int[]> test = new HashMap<>();
-//        int[] input = {1,2,3};
-//        test.put(1, input);
-//        FinalData.addToTraineesTraining(test);
-//        HashMap<Integer, int[]> output = FinalData.getTraineesTraining();
-//        int[] out = output.get(1);
-//        Assertions.assertEquals(input, out);
-//    }
-//
+
+    @Test
+    @DisplayName("Test adding and retrieving from open centres")
+    public void testTraineesTraining() {
+        HashMap<Integer, int[]> test = new HashMap<>();
+        int[] input = {1, 2, 3};
+        test.put(1, input);
+        FinalData.addToTraineesTraining(test);
+        HashMap<Integer, int[]> output = FinalData.getTraineesTraining();
+        int[] out = output.get(1);
+        Assertions.assertEquals(input, out);
+    }
+
 //    @Test
 //    @DisplayName("Test adding and retrieving from open centres")
 //    public void testTraineesOnWaitingList() {
@@ -80,4 +78,4 @@
 //        int[] out = output.get(1);
 //        Assertions.assertEquals(input, out);
 //    }
-//}
+}

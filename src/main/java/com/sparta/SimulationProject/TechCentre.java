@@ -10,12 +10,12 @@ import java.util.List;
 
 public class TechCentre implements Centre {
 
-    private int numberOfTraineesInCentre;
     private final int MAX_CAPACITY = 200;
     private final CentreType centreType = CentreType.TECHCENTRE;
     private final CourseType courseType;
-    private boolean full = false;
     private final List<Trainee> currentTrainees = new ArrayList<>();
+    private int numberOfTraineesInCentre;
+    private boolean full = false;
 
 
     public TechCentre(CourseType courseType) {
