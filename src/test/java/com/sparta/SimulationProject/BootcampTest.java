@@ -19,7 +19,7 @@ public class BootcampTest {
     @Test
     @DisplayName("Test should return the max capacity of a training centre")
     public void shouldReturn100() {
-        Assertions.assertEquals(100, bootCamp.getMAX_CAPACITY());
+        Assertions.assertEquals(500, bootCamp.getMAX_CAPACITY());
     }
 
     @Test
