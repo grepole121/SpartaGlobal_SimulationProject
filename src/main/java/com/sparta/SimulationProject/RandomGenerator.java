@@ -15,12 +15,12 @@ public class RandomGenerator {
 
     public static int randomTraineeIntake(){
         Random rand = new Random();
-        return rand.nextInt(20);
+        return rand.nextInt(21);
     }
 
     public static List<Trainee> newTrainees(){
         Random rand = new Random();
-        return GenerateTrainees.generateTrainees((rand.nextInt(10) + 20));
+        return GenerateTrainees.generateTrainees((rand.nextInt(11) + 20));
     }
 
     public static List<Centre> randomCentre() {

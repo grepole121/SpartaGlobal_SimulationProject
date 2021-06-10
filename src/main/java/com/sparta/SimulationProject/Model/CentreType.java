@@ -7,7 +7,7 @@ public enum CentreType {
 
     public static CentreType getRandomCentreType() {
         Random random = new Random();
-        int centreType = random.nextInt(2);
+        int centreType = random.nextInt(3);
         if(centreType == 2){
             return BOOTCAMP;
         }

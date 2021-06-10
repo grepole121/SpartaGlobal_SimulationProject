@@ -7,7 +7,8 @@ public enum CourseType {
 
     public static CourseType getRandomCourseType() {
         Random random = new Random();
-         switch (random.nextInt(5)){
+        int x = random.nextInt(5);
+         switch (x){
 
              case 0:
                  return JAVA;
