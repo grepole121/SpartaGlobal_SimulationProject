@@ -19,6 +19,10 @@ public interface Centre {
     public void setFull(boolean full);
     public boolean lowCapacity();
     public CentreType getCentreType();
-    List<Trainee> getCurrentTrainees();
+
+
+
+    public CourseType getCourseType();
+    public List<Trainee> getTrainees();
 
 }

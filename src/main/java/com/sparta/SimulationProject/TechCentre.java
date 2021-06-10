@@ -17,6 +17,8 @@ public class TechCentre implements Centre {
     private boolean full = false;
     private List<Trainee> currentTrainees = new ArrayList<>();
 
+
+
     public TechCentre (CourseType courseType) {
         this.numberOfTraineesInCentre = 0;
         this.courseType = courseType;
@@ -55,7 +57,7 @@ public class TechCentre implements Centre {
 
     @Override
     public boolean lowCapacity() {
-        return numberOfTraineesInCentre < 10;
+        return currentTrainees.size() < 10;
     }
 
     @Override
@@ -67,8 +69,9 @@ public class TechCentre implements Centre {
         return this.courseType;
     }
 
+
     @Override
-    public List<Trainee> getCurrentTrainees() {
+    public List<Trainee> getTrainees() {
         return currentTrainees;
     }
 }

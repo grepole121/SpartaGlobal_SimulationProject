@@ -19,6 +19,11 @@ public class Simulation {
     private int[] totalCentresFull = new int[3];
     private int[] totalCentresOpen = new int[3];
     private int[] totalCentresClosed = new int[3];
+    private HashMap<Integer, int[]> centresClosed = new HashMap<>();
+    private HashMap<Integer,int[]> openCentres = new HashMap<>();
+    private HashMap<Integer,int[]> fullCentres = new HashMap<>();
+    private HashMap<Integer,int[]> traineesInTraining = new HashMap<>();
+    private HashMap<Integer,int[]> waitingListTraineeCount = new HashMap<>();
 
 
     public void runSimulation(int lengthOfTime) {
@@ -37,25 +42,8 @@ public class Simulation {
             // tracks number of trainees by each stream
             for (Trainee trainee : tempTrainees) {
                 traineesTraining[trainee.getCourseType().ordinal()]++;
-//                switch (trainee.getCourseType()) {
-//                    case DATA:
-//                        traineesTraining[CourseType.DATA.ordinal()]++;
-//                        break;
-//                    case JAVA:
-//                        traineesTraining[CourseType.JAVA.ordinal()]++;
-//                        break;
-//                    case CSHARP:
-//                        traineesTraining[CourseType.CSHARP.ordinal()]++;
-//                        break;
-//                    case DEVOPS:
-//                        traineesTraining[CourseType.DEVOPS.ordinal()]++;
-//                        break;
-//                    case BUSINESS:
-//                        traineesTraining[CourseType.BUSINESS.ordinal()]++;
-//                        break;
-
-  //              }
             }
+
 
 
             // wipes every iteration to start fresh
@@ -93,7 +81,7 @@ public class Simulation {
                         if (freeSpace < newTraineeIntake) {
                             if (waitingList.size() < freeSpace) {
                                 int tempWaitingListSize = waitingList.size();
-                                for ( i = 0; i < tempWaitingListSize; i++) {
+                                for ( i = 0; i < waitingList.size(); i++) {
                                     trainingCentre.addTrainees(waitingList.pollFirst());
                                 }
                             } else {
@@ -120,7 +108,7 @@ public class Simulation {
                         if (freeSpace < newTraineeIntake) {
                             if (waitingList.size() < freeSpace){
                                 for (i = 0; i < waitingList.size(); i++) {
-                                    if (waitingList.get(i).getCourseType().equals(trainingCentre.getCentreType())) {
+                                    if (waitingList.get(i).getCourseType().equals(trainingCentre.getCourseType())) {
                                         trainingCentre.addTrainees(waitingList.get(i));
                                         waitingList.remove(i--);
                                     }
@@ -129,9 +117,9 @@ public class Simulation {
                             } else {
                                 for (i = 0; i < freeSpace; i++) {
                                     for (int secondCounter = 0; secondCounter < waitingList.size(); secondCounter++) {
-                                        if (waitingList.get(secondCounter).getCourseType().equals(trainingCentre.getCentreType())) {
+                                        if (waitingList.get(secondCounter).getCourseType().equals(trainingCentre.getCourseType())) {
                                             trainingCentre.addTrainees(waitingList.get(secondCounter));
-                                            waitingList.remove(secondCounter);
+                                            waitingList.remove(secondCounter--);
                                             break;
                                         }
                                     }
@@ -142,8 +130,8 @@ public class Simulation {
                         } else {
                             if (waitingList.size() < newTraineeIntake) {
                                 int tempWaitingListSize = waitingList.size();
-                                for (i = 0; i < tempWaitingListSize; i++) {
-                                    if (waitingList.get(i).getCourseType().equals(trainingCentre.getCentreType())) {
+                                for (i = 0; i < waitingList.size(); i++) {
+                                    if (waitingList.get(i).getCourseType().equals(trainingCentre.getCourseType())) {
                                         trainingCentre.addTrainees(waitingList.get(i));
                                         waitingList.remove(i--);
                                     }
@@ -151,7 +139,7 @@ public class Simulation {
                             } else {
                                 for (i = 0; i < newTraineeIntake; i++) {
                                     for (int secondCounter = 0; secondCounter < waitingList.size(); secondCounter++) {
-                                        if (waitingList.get(secondCounter).getCourseType().equals(trainingCentre.getCentreType())) {
+                                        if (waitingList.get(secondCounter).getCourseType().equals(trainingCentre.getCourseType())) {
                                             trainingCentre.addTrainees(waitingList.get(secondCounter));
                                             waitingList.remove(secondCounter);
                                             continue;
@@ -185,38 +173,40 @@ public class Simulation {
                             totalCentresOpen[CentreType.TECHCENTRE.ordinal()]--;
                             break;
                     }
+                    for (int j=0;j<trainingCentreList.get(i).getTrainees().size();j++)
+                    {
+                        waitingList.addFirst(trainingCentreList.get(i).getTrainees().get(j));
+                    }
+
                     trainingCentreList.remove(i);
                 }
             }
             for (Trainee trainee : waitingList) {
                 traineesOnWaitingList[trainee.getCourseType().ordinal()]++;
             }
+            System.out.println(Arrays.toString(traineesTraining));
+            System.out.println(Arrays.toString(traineesOnWaitingList));
             for(int j =0; j<5;j++) {
+
                 traineesInCentres[j]=traineesTraining[j]-traineesOnWaitingList[j];
             }
-
-            HashMap<Integer, int[]> centresClosed = new HashMap<>();
             centresClosed.put(month, totalCentresClosed);
-            FinalData.addToClosedCentres(centresClosed);
-            HashMap<Integer,int[]> openCentres = new HashMap<>();
             openCentres.put(month,totalCentresOpen);
-            FinalData.addToOpenCentres(openCentres);
-            HashMap<Integer,int[]> fullCentres = new HashMap<>();
             fullCentres.put(month,totalCentresFull);
-            FinalData.addToFullCentres(fullCentres);
-            HashMap<Integer,int[]> traineesInTraining = new HashMap<>();
             traineesInTraining.put(month,traineesInCentres);
-            FinalData.addToTraineesTraining(traineesInTraining);
-            HashMap<Integer,int[]> waitingListTraineeCount = new HashMap<>();
             waitingListTraineeCount.put(month,traineesOnWaitingList);
-            FinalData.addToTraineesOnWaitingList(waitingListTraineeCount);
+
 
 
 
             //end of Monthly for loop
         }
         //send data to finalData
-
+        FinalData.addToTraineesOnWaitingList(waitingListTraineeCount);
+        FinalData.addToTraineesTraining(traineesInTraining);
+        FinalData.addToOpenCentres(openCentres);
+        FinalData.addToClosedCentres(centresClosed);
+        FinalData.addToFullCentres(fullCentres);
         // results to be displayed are num open centers, num full centers, num trainees currently training, num trainees on waiting list
 
 //        monthlyResult[0] = numberOfTrainingCentres;

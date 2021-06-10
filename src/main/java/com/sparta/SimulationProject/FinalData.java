@@ -22,11 +22,13 @@ public class FinalData {
     }
 
     public static HashMap<Integer, int[]> getOpenCentres() {
+
         return openCentres;
     }
 
     public static void addToOpenCentres(HashMap<Integer, int[]> openCentresInput) {
         openCentres.putAll(openCentresInput);
+
     }
 
     public static HashMap<Integer, int[]> getFullCentres() {
@@ -42,6 +44,7 @@ public class FinalData {
     }
 
     public static void addToTraineesTraining(HashMap<Integer, int[]> traineesTrainingInput) {
+
         traineesTraining.putAll(traineesTrainingInput);
     }
 

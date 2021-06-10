@@ -2,6 +2,7 @@ package com.sparta.SimulationProject;
 
 import com.sparta.SimulationProject.Model.Centre;
 import com.sparta.SimulationProject.Model.CentreType;
+import com.sparta.SimulationProject.Model.CourseType;
 import com.sparta.SimulationProject.Model.Trainee;
 
 import java.util.ArrayList;
@@ -22,7 +23,7 @@ public class TrainingHub implements Centre {
 
     @Override
     public int getNumberOfTraineesInCentre() {
-        return numberOfTraineesInCentre;
+        return currentTrainees.size();
     }
 
     @Override
@@ -47,7 +48,7 @@ public class TrainingHub implements Centre {
 
     @Override
     public boolean lowCapacity() {
-        return numberOfTraineesInCentre < 10;
+        return currentTrainees.size() < 10;
     }
 
     @Override
@@ -56,7 +57,11 @@ public class TrainingHub implements Centre {
     }
 
     @Override
-    public List<Trainee> getCurrentTrainees() {
+    public CourseType getCourseType() {
+        return null;
+    }
+    @Override
+    public List<Trainee> getTrainees() {
         return currentTrainees;
     }
 }
