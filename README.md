@@ -7,16 +7,16 @@ The aim of the project was to provide working software that could help predict f
 
 #### Tools and techniques used in the simulation project
 the tools used by the team include
-- git for version control.
-- github to share progress across the group, track user stories and project progress.
-- draw.io to allow the group to work collabritivly on creating different kinds of documents, such as a UML document.
-- intelli-j to write the software for the project
+- Git for version control.
+- GitHub to share progress across the group, track user stories and project progress.
+- Draw.io to allow the group to work collabritivly on creating different kinds of documents, such as a UML document.
+- Intelli-j to write the software for the project
 - JUnit to test the software
-- maven to manage software dependancies
+- Maven to manage software dependancies
 - SOLID principles and OOP values to help design the project in a way that allows it to be scaleable, testable and readable for any future developers that work on the project
 - MVC as the project architecture to help co-ordinate classes and varies packages
 - JDK 11 as the compilier for the software
-- onedrive to allow multiple people to work on a single document at a time
+- Onedrive to allow multiple people to work on a single document at a time
 
 ### User Guide
 
