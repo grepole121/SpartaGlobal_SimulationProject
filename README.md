@@ -134,3 +134,196 @@ upon starting the program the ui will open and have two drop-down boxes that wil
 | Void         	| Print(String message)                   	| Prints message                                     	|
 | Void         	| Print(HashMap<Integer, int[]>           	| Prints the details of output                       	|
 | Void         	| rintFinalMonth(HashMap<Integer, int[]>  	| Prints the details of output for the final month.  	|
+
+  
+  
+  ### Testing
+  
+  Testing was done using JUnit 5 to perform automated testing.
+  
+  #### Tests for BootCamp class: 
+
+getMAX_CAPACITY() - Test should return the max capacity of the bootcamp - This was tested by creating a bootCamp object and checking that the getMAX_CAPACITY() method returns 500 when called 
+
+ 
+
+getNumberOfTraineesInCentre() - Test should return the default number of trainees (which is 0) - This was tested by creating a bootCamp object and checking that the getNumberOfTraineesInCentre() method returns 0 if no trainees have been added 
+
+ 
+
+getNumberOfTraineesInCentre(), addTrainees() - Test should return the number of trainees after trainees have been added - This was tested by adding trainees to the bootCamp object using the addTrainees() method and checking that the getNumberOfTrainees() method returns the right number of trainees that were added 
+
+ 
+
+isFull() - Test should return false when the training centre is not full - This was tested by checking that the isFull() method returns false when the bootCamp object is not full 
+
+ 
+
+isFull(), setFull() - Test should return true when the training centre is full – This was tested by using the setFull() method to make the bootCamp full and then checking that the isFull() method returns true 
+
+ 
+
+lowCapacity() - Test should return true when the bootcamp's number of trainees is less than 10 for 3 months - This was tested by calling the lowCapacity() method on the bootCamp 3 times to simulate the bootCamp having less than 10 trainees for 3 months in the row. The lowCapacity() method was checked on the third time to make sure it returned true 
+
+ 
+
+lowCapacity() - Test should return false when the bootcamp's number of trainees is less than 10 but for less than 3 months – This was tested by calling the lowCapacity() method on the bootCamp twice when it had less than 10 trainees. It was checked that it returned false so that the bootCamps only close when they have low attendance for 3 months in a row 
+
+ 
+
+lowCapacity() - Test should return false when the bootcamp's number of trainees is 10 or higher – This was tested by calling the lowCapacity() method on a bootCamp that has more than 10 trainees and checking that it returns false 
+
+ 
+
+GetCentreType() - Test should return the correct centre type (bootcamp in this case) - This was tested by calling the getCentreType() method on a bootCamp object and checking that it returns CentreType.BOOTCAMP 
+
+ 
+
+GetTrainees() - Test should return the list of current trainees – This was tested by adding a trainee to a bootCamp object and checking that the getTrainees() method returns the trainee in a List 
+
+#### Tests for Printer class: 
+
+Test the Printer.print function can print out a string 
+
+This test tests the Printer.print() method. We used a lambda expression SystemLambda.tapSystemOut to have Printer.print print to a String instead of the console. This was then compared to the string that was imputed using Assertions.assertEquals. 
+
+Test the Printer.print function can print out the final month 
+
+This test tests the Printer.print method that has been overloaded to accept a HashMap. This method then takes values from the hashmap and prints them to the console. We used a lambda expression SystemLambda.tapSystemOut to have Printer.print print to a String instead of the console. This was then compared to what we expected it to print using Assertions.assertEquals. 
+
+#### Tests for Random Generator class: 
+
+TestRandomTraineesWithinBounds 
+
+This test tests that the random trainees that are generated remain within the predeteremined bounds. This was tested by generated a random list of trainees using the RandomGenerator.newtrainees() method then determining the size of this list. If the list is between 10 & 30 (10 & 30 inclusive), then this test will return true. Else it’ll return false. We used Assertions.assertEquals() to compare the result of the test with true.  
+
+TestRandomTraineesOutsideBounds 
+
+This test tests that if the random trainees that are generated are outside of the predetermined bounds, I.e. between 20 and 30 (inclusive). This tests this by generating a random list of trainees using the RandomGenerator.newTrainees() method. Then assessing the size of this list and determining whether the size is between 20 and 30 and assigning the result to a boolean output. This output is then assessed using the Assertions.assertEquals() method comparing the output to ‘true’. 
+
+TestRandomCentre() 
+
+This test simply tests that the randomCentre method returns a value that is not null. This is done by creating a list of randomly generated centres using the RandomGenerator.randomCentre() method. Then, by using a for each loop to cycle through each of the created centres and determine if any of the centres are null, the returningCentre boolean variable is set to false and we break out of the for each loop. (if the centre isnt null, the boolean variable is simply determined as true and the for each loop is continued). After the for each loop is completed or broken out of, an Assertions.assertEquals(true, returningCentre) is run. 
+
+TestRandomIntakeWithinBounds 
+
+	This test tests whether a randomly generated number of trainee intake is 		between the predetermined bounds of 0 & 20 (inclusive). This is done by using 	the RandomGenerator.randomTraineeIntake() method. And running an if statement 	testing that it is infact between those two bounds. If it isnt, a pre-		initialised boolean value is set to false (or kept initialised as true 		otherwise), then the Assertions.assertEquals(true, withinBounds) method is 		run. 
+
+TestRandomIntakeOutsideBounds 
+
+This is an identical test to the above, however, it tests whether the randomly generated trainee intake value is outside of the bounds of 0 & 20 (inclusive). It sets the result of that if statement to a boolean value, then that boolean value is placed within the Assertions.assertEquals(true, outsideBounds) method which is run. 
+
+#### Tests for TechCentre class: 
+
+	getMAX_CAPACITY() - Test should return the max capacity of the techCentre - This was tested by creating a techCentre object and checking that the getMAX_CAPACITY() method returns 200 when called 
+
+ 
+
+getNumberOfTraineesInCentre() - Test should return the default number of trainees (which is 0) - This was tested by creating a techCentre object and checking that the getNumberOfTraineesInCentre() method returns 0 if no trainees have been added 
+
+ 
+
+getNumberOfTraineesInCentre(), addTrainees() - Test should return the number of trainees after trainees have been added - This was tested by adding trainees to the techCentre object using the addTrainees() method and checking that the getNumberOfTrainees() method returns the right number of trainees that were added 
+
+ 
+
+isFull() - Test should return false when the training centre is not full - This was tested by checking that the isFull() method returns false when the techCentre object is not full 
+
+ 
+
+isFull(), setFull() - Test should return true when the training centre is full – This was tested by using the setFull() method to make the techCentre full and then checking that the isFull() method returns true 
+
+ 
+
+lowCapacity() - Test should return true when the bootcamp's number of trainees is lower than 10 – This was tested by calling the lowCapacity() method on a techCentre that has less than 10 trainees and checking that it returns true. 
+
+ 
+
+GetCentreType() - Test should return the correct centre type (bootcamp in this case) - This was tested by calling the getCentreType() method on a techCentre object and checking that it returns CentreType.TECHCENTRE 
+
+ 
+
+GetTrainees() - Test should return the list of current trainees – This was tested by adding a trainee to a techCentre object and checking that the getTrainees() method returns the trainee in a List 
+
+ 
+
+#### Tests for FinalData class: 
+
+Test adding and retrieving from closed centres 
+
+Both methods .addToClosedCentres and .getClosedCentres were tested. A dummy value was inserted using .addToClosedCentres and was then retreived using .getClosedCentres. This retrieved value was then compared to the original value that was inserted using Assertions.assertEQuals. Due to the fact that this test would only have passed if both methods were working we were able to test both methods in one test. 
+
+Test adding and retrieving from open centres 
+
+Both methods .addToOpenCentres and .getOpenCentres were tested. A dummy value was inserted using .addToOpenCentres and was then retreived using .getOpenCentres. This retrieved value was then compared to the original value that was inserted using Assertions.assertEQuals. Due to the fact that this test would only have passed if both methods were working we were able to test both methods in one test. 
+
+ 
+
+Test adding and retrieving from full centres 
+
+Both methods .addToFullCentres and .getFullCentres were tested. A dummy value was inserted using .addToFullCentres and was then retreived using .getFullCentres. This retrieved value was then compared to the original value that was inserted using Assertions.assertEQuals. Due to the fact that this test would only have passed if both methods were working we were able to test both methods in one test. 
+
+ 
+
+Test adding and retrieving from trainees training 
+
+Both methods .addTotraineesTraing and .getTraineesTraining were tested. A dummy value was inserted using .addToTraineesTraining and was then retreived using .getTraineesTraining. This retrieved value was then compared to the original value that was inserted using Assertions.assertEQuals. Due to the fact that this test would only have passed if both methods were working we were able to test both methods in one test. 
+
+ 
+
+Test adding and retrieving from trainees on waiting list 
+
+Both methods .addToTraineesOnWaitingList and .getTraineesOnWaitingList were tested. A dummy value was inserted using .addToTraineesOnWaitingList and was then retreived using .getTraineesOnWaitingList. This retrieved value was then compared to the original value that was inserted using Assertions.assertEQuals. Due to the fact that this test would only have passed if both methods were working we were able to test both methods in one test. 
+
+ 
+
+#### Tests for Trainee class: 
+
+Test that trainee.getCourseType returns course type that was inputted when creating the Trainee object 
+
+This test tests the trainee.getCourseType. This tests that courseType that has been assigned to each trainee is the same as the course type that is returned when the trainee.getCourseType method is called.This was done by creating a dummy trainee object and setting it’s course to CSharp. This was then compared using Assertions.assertEqualsCSharps 
+
+Tests for TrainingHub class: 
+
+getMAX_CAPACITY() - Test should return the max capacity of the TrainingHub - This was tested by creating a trainingHub object and checking that the getMAX_CAPACITY() method returns 100 when called 
+
+ 
+
+getNumberOfTraineesInCentre() - Test should return the default number of trainees (which is 0) - This was tested by creating a trainingHub object and checking that the getNumberOfTraineesInCentre() method returns 0 if no trainees have been added 
+
+ 
+
+getNumberOfTraineesInCentre(), addTrainees() - Test should return the number of trainees after trainees have been added - This was tested by adding trainees to the trainingHub object using the addTrainees() method and checking that the getNumberOfTrainees() method returns the right number of trainees that were added 
+
+ 
+
+isFull() - Test should return false when the training centre is not full - This was tested by checking that the isFull() method returns false when the trainingHub object is not full 
+
+ 
+
+isFull(), setFull() - Test should return true when the training centre is full – This was tested by using the setFull() method to make the trainingHub full and then checking that the isFull() method returns true 
+
+ 
+
+lowCapacity() - Test should return true when the bootcamp's number of trainees is lower than 10 – This was tested by calling the lowCapacity() method on a trainingHub that has less than 10 trainees and checking that it returns true. 
+
+ 
+
+GetCentreType() - Test should return the correct centre type (bootcamp in this case) - This was tested by calling the getCentreType() method on a trainingHub object and checking that it returns CentreType.TRAININGHUB 
+
+ 
+
+GetTrainees() - Test should return the list of current trainees – This was tested by adding a trainee to a trainingHub object and checking that the getTrainees() method returns the trainee in a List 
+
+ 
+
+#### Tests for UserInput class: 
+
+Test to see if scanner can read in an int 
+
+This test tests the UserInput method. A dummy user input was created using  
+
+ByteArrayInputStream in = new ByteArrayInputStream(simulatedUserInput.getBytes()); 
+
+	This was then inputted to UserInput and Assertions.assertEquals was used to 	check if the input returned is the same as the inputted input.
+  
