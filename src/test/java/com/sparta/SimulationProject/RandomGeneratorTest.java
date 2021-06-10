@@ -37,6 +37,7 @@ public class RandomGeneratorTest {
     }
 
     @Test
+    @DisplayName("Test that randomCntre returns not null")
     public void TestRandomCentre() {
         boolean returningCentre = false;
         List<Centre> centre = RandomGenerator.randomCentre();
