@@ -2,6 +2,7 @@ package com.sparta.SimulationProject;
 
 import com.sparta.SimulationProject.Model.Centre;
 import com.sparta.SimulationProject.Model.CentreType;
+import com.sparta.SimulationProject.Model.CourseType;
 import com.sparta.SimulationProject.Model.Trainee;
 
 import java.util.ArrayList;
@@ -51,7 +52,7 @@ public class Bootcamp implements Centre {
     public boolean lowCapacity(){
         if(numberOfTraineesInCentre < 10 && counterLowCapacity == 3){
             return true;
-        } else if (numberOfTraineesInCentre < 10) {
+        } else if (currentTrainees.size() < 10) {
             counterLowCapacity++;
         } else {
             counterLowCapacity =0;
@@ -62,5 +63,15 @@ public class Bootcamp implements Centre {
     @Override
     public CentreType getCentreType() {
         return this.centreType;
+    }
+
+    @Override
+    public CourseType getCourseType() {
+        return null;
+    }
+
+    @Override
+    public List<Trainee> getTrainees() {
+        return currentTrainees;
     }
 }

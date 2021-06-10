@@ -3,6 +3,8 @@ package com.sparta.SimulationProject.Model;
 
 import com.sparta.SimulationProject.RandomGenerator;
 
+import java.util.List;
+
 public interface Centre {
 
 //    final int MAX_CAPACITY = 100;
@@ -17,5 +19,6 @@ public interface Centre {
     public void setFull(boolean full);
     public boolean lowCapacity();
     public CentreType getCentreType();
-
+    public CourseType getCourseType();
+    public List<Trainee> getTrainees();
 }
