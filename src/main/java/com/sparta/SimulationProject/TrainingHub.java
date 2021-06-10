@@ -33,6 +33,7 @@ public class TrainingHub implements Centre {
     @Override
     public void addTrainees(Trainee traineesEnrolled) {
         currentTrainees.add(traineesEnrolled);
+        numberOfTraineesInCentre++;
     }
     @Override
     public boolean isFull() {
@@ -52,5 +53,10 @@ public class TrainingHub implements Centre {
     @Override
     public CentreType getCentreType() {
         return centreType;
+    }
+
+    @Override
+    public List<Trainee> getCurrentTrainees() {
+        return currentTrainees;
     }
 }
