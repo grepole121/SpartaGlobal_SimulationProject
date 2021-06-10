@@ -1,8 +1,6 @@
 package com.sparta.SimulationProject.Model;
 
 
-import com.sparta.SimulationProject.RandomGenerator;
-
 import java.util.List;
 
 public interface Centre {

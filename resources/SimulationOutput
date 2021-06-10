@@ -1,720 +1,1392 @@
 ---Month 1---
-Open Centres: 1
-Full Centres: 0
-Trainees in training: 19
-Trainees on waiting list: 1
-
+Open Centres: 
+Training hub : 2
+Tech Centre : 0
+Bootcamp : 0
+Full Centres: 
+Training hub : 0
+Tech Centre : 0
+Bootcamp : 0
+Closed Centres: 
+Training hub : 1
+Tech Centre : 0
+Bootcamp : 0
+Trainees in Training per Centre Type: 
+Training hub : 20
+Tech Centre : 0
+Bootcamp : 0
+Trainees in Training: 
+JAVA : 6
+CSHARP : 5
+DEVOPS : 3
+DATA : 5
+BUSINESS : 1
+Trainees on the Waiting List: 
+JAVA : 0
+CSHARP : 2
+DEVOPS : 0
+DATA : 3
+BUSINESS : 2
 ---Month 2---
-Open Centres: 1
-Full Centres: 0
-Trainees in training: 30
-Trainees on waiting list: 19
-
+Open Centres: 
+Training hub : 2
+Tech Centre : 0
+Bootcamp : 0
+Full Centres: 
+Training hub : 0
+Tech Centre : 0
+Bootcamp : 0
+Closed Centres: 
+Training hub : 1
+Tech Centre : 0
+Bootcamp : 0
+Trainees in Training per Centre Type: 
+Training hub : 49
+Tech Centre : 0
+Bootcamp : 0
+Trainees in Training: 
+JAVA : 10
+CSHARP : 14
+DEVOPS : 5
+DATA : 12
+BUSINESS : 8
+Trainees on the Waiting List: 
+JAVA : 3
+CSHARP : 2
+DEVOPS : 1
+DATA : 0
+BUSINESS : 0
 ---Month 3---
-Open Centres: 2
-Full Centres: 0
-Trainees in training: 59
-Trainees on waiting list: 15
-
+Open Centres: 
+Training hub : 2
+Tech Centre : 0
+Bootcamp : 1
+Full Centres: 
+Training hub : 0
+Tech Centre : 0
+Bootcamp : 0
+Closed Centres: 
+Training hub : 1
+Tech Centre : 0
+Bootcamp : 0
+Trainees in Training per Centre Type: 
+Training hub : 69
+Tech Centre : 0
+Bootcamp : 8
+Trainees in Training: 
+JAVA : 15
+CSHARP : 20
+DEVOPS : 12
+DATA : 18
+BUSINESS : 12
+Trainees on the Waiting List: 
+JAVA : 0
+CSHARP : 1
+DEVOPS : 0
+DATA : 2
+BUSINESS : 0
 ---Month 4---
-Open Centres: 2
-Full Centres: 0
-Trainees in training: 93
-Trainees on waiting list: 4
-
+Open Centres: 
+Training hub : 2
+Tech Centre : 0
+Bootcamp : 1
+Full Centres: 
+Training hub : 0
+Tech Centre : 0
+Bootcamp : 0
+Closed Centres: 
+Training hub : 1
+Tech Centre : 0
+Bootcamp : 0
+Trainees in Training per Centre Type: 
+Training hub : 83
+Tech Centre : 0
+Bootcamp : 24
+Trainees in Training: 
+JAVA : 19
+CSHARP : 29
+DEVOPS : 14
+DATA : 24
+BUSINESS : 21
+Trainees on the Waiting List: 
+JAVA : 0
+CSHARP : 0
+DEVOPS : 0
+DATA : 0
+BUSINESS : 0
 ---Month 5---
-Open Centres: 3
-Full Centres: 0
-Trainees in training: 117
-Trainees on waiting list: 0
-
+Open Centres: 
+Training hub : 3
+Tech Centre : 0
+Bootcamp : 1
+Full Centres: 
+Training hub : 0
+Tech Centre : 0
+Bootcamp : 0
+Closed Centres: 
+Training hub : 3
+Tech Centre : 0
+Bootcamp : 0
+Trainees in Training per Centre Type: 
+Training hub : 102
+Tech Centre : 0
+Bootcamp : 24
+Trainees in Training: 
+JAVA : 23
+CSHARP : 35
+DEVOPS : 14
+DATA : 29
+BUSINESS : 25
+Trainees on the Waiting List: 
+JAVA : 0
+CSHARP : 1
+DEVOPS : 0
+DATA : 2
+BUSINESS : 0
 ---Month 6---
-Open Centres: 3
-Full Centres: 0
-Trainees in training: 136
-Trainees on waiting list: 10
-
+Open Centres: 
+Training hub : 3
+Tech Centre : 0
+Bootcamp : 1
+Full Centres: 
+Training hub : 0
+Tech Centre : 0
+Bootcamp : 0
+Closed Centres: 
+Training hub : 3
+Tech Centre : 0
+Bootcamp : 0
+Trainees in Training per Centre Type: 
+Training hub : 124
+Tech Centre : 0
+Bootcamp : 27
+Trainees in Training: 
+JAVA : 26
+CSHARP : 38
+DEVOPS : 20
+DATA : 36
+BUSINESS : 31
+Trainees on the Waiting List: 
+JAVA : 0
+CSHARP : 0
+DEVOPS : 0
+DATA : 0
+BUSINESS : 0
 ---Month 7---
-Open Centres: 4
-Full Centres: 1
-Trainees in training: 156
-Trainees on waiting list: 12
-
+Open Centres: 
+Training hub : 3
+Tech Centre : 0
+Bootcamp : 2
+Full Centres: 
+Training hub : 0
+Tech Centre : 0
+Bootcamp : 0
+Closed Centres: 
+Training hub : 3
+Tech Centre : 0
+Bootcamp : 0
+Trainees in Training per Centre Type: 
+Training hub : 134
+Tech Centre : 0
+Bootcamp : 43
+Trainees in Training: 
+JAVA : 30
+CSHARP : 47
+DEVOPS : 25
+DATA : 41
+BUSINESS : 34
+Trainees on the Waiting List: 
+JAVA : 0
+CSHARP : 0
+DEVOPS : 0
+DATA : 0
+BUSINESS : 0
 ---Month 8---
-Open Centres: 4
-Full Centres: 1
-Trainees in training: 193
-Trainees on waiting list: 0
-
+Open Centres: 
+Training hub : 3
+Tech Centre : 0
+Bootcamp : 2
+Full Centres: 
+Training hub : 0
+Tech Centre : 0
+Bootcamp : 0
+Closed Centres: 
+Training hub : 3
+Tech Centre : 0
+Bootcamp : 0
+Trainees in Training per Centre Type: 
+Training hub : 146
+Tech Centre : 0
+Bootcamp : 51
+Trainees in Training: 
+JAVA : 34
+CSHARP : 52
+DEVOPS : 29
+DATA : 44
+BUSINESS : 38
+Trainees on the Waiting List: 
+JAVA : 0
+CSHARP : 0
+DEVOPS : 0
+DATA : 0
+BUSINESS : 0
 ---Month 9---
-Open Centres: 5
-Full Centres: 1
-Trainees in training: 217
-Trainees on waiting list: 0
-
+Open Centres: 
+Training hub : 4
+Tech Centre : 0
+Bootcamp : 2
+Full Centres: 
+Training hub : 0
+Tech Centre : 0
+Bootcamp : 0
+Closed Centres: 
+Training hub : 5
+Tech Centre : 0
+Bootcamp : 0
+Trainees in Training per Centre Type: 
+Training hub : 149
+Tech Centre : 0
+Bootcamp : 70
+Trainees in Training: 
+JAVA : 38
+CSHARP : 56
+DEVOPS : 33
+DATA : 49
+BUSINESS : 43
+Trainees on the Waiting List: 
+JAVA : 1
+CSHARP : 1
+DEVOPS : 0
+DATA : 1
+BUSINESS : 0
 ---Month 10---
-Open Centres: 5
-Full Centres: 1
-Trainees in training: 243
-Trainees on waiting list: 0
-
+Open Centres: 
+Training hub : 3
+Tech Centre : 0
+Bootcamp : 2
+Full Centres: 
+Training hub : 0
+Tech Centre : 0
+Bootcamp : 0
+Closed Centres: 
+Training hub : 6
+Tech Centre : 0
+Bootcamp : 0
+Trainees in Training per Centre Type: 
+Training hub : 164
+Tech Centre : 0
+Bootcamp : 79
+Trainees in Training: 
+JAVA : 42
+CSHARP : 60
+DEVOPS : 39
+DATA : 52
+BUSINESS : 50
+Trainees on the Waiting List: 
+JAVA : 1
+CSHARP : 0
+DEVOPS : 0
+DATA : 0
+BUSINESS : 0
 ---Month 11---
-Open Centres: 6
-Full Centres: 1
-Trainees in training: 267
-Trainees on waiting list: 0
-
+Open Centres: 
+Training hub : 4
+Tech Centre : 0
+Bootcamp : 2
+Full Centres: 
+Training hub : 0
+Tech Centre : 0
+Bootcamp : 0
+Closed Centres: 
+Training hub : 8
+Tech Centre : 0
+Bootcamp : 0
+Trainees in Training per Centre Type: 
+Training hub : 182
+Tech Centre : 0
+Bootcamp : 85
+Trainees in Training: 
+JAVA : 44
+CSHARP : 64
+DEVOPS : 44
+DATA : 61
+BUSINESS : 54
+Trainees on the Waiting List: 
+JAVA : 1
+CSHARP : 0
+DEVOPS : 0
+DATA : 0
+BUSINESS : 0
 ---Month 12---
-Open Centres: 6
-Full Centres: 2
-Trainees in training: 288
-Trainees on waiting list: 0
-
+Open Centres: 
+Training hub : 3
+Tech Centre : 0
+Bootcamp : 2
+Full Centres: 
+Training hub : 0
+Tech Centre : 0
+Bootcamp : 0
+Closed Centres: 
+Training hub : 9
+Tech Centre : 0
+Bootcamp : 0
+Trainees in Training per Centre Type: 
+Training hub : 208
+Tech Centre : 0
+Bootcamp : 86
+Trainees in Training: 
+JAVA : 50
+CSHARP : 72
+DEVOPS : 46
+DATA : 68
+BUSINESS : 58
+Trainees on the Waiting List: 
+JAVA : 0
+CSHARP : 0
+DEVOPS : 0
+DATA : 0
+BUSINESS : 0
 ---Month 13---
-Open Centres: 7
-Full Centres: 2
-Trainees in training: 317
-Trainees on waiting list: 0
-
+Open Centres: 
+Training hub : 5
+Tech Centre : 0
+Bootcamp : 2
+Full Centres: 
+Training hub : 0
+Tech Centre : 0
+Bootcamp : 0
+Closed Centres: 
+Training hub : 10
+Tech Centre : 0
+Bootcamp : 0
+Trainees in Training per Centre Type: 
+Training hub : 237
+Tech Centre : 0
+Bootcamp : 86
+Trainees in Training: 
+JAVA : 54
+CSHARP : 78
+DEVOPS : 51
+DATA : 75
+BUSINESS : 65
+Trainees on the Waiting List: 
+JAVA : 0
+CSHARP : 0
+DEVOPS : 0
+DATA : 0
+BUSINESS : 0
 ---Month 14---
-Open Centres: 7
-Full Centres: 2
-Trainees in training: 343
-Trainees on waiting list: 0
-
+Open Centres: 
+Training hub : 4
+Tech Centre : 0
+Bootcamp : 2
+Full Centres: 
+Training hub : 1
+Tech Centre : 0
+Bootcamp : 0
+Closed Centres: 
+Training hub : 11
+Tech Centre : 0
+Bootcamp : 0
+Trainees in Training per Centre Type: 
+Training hub : 240
+Tech Centre : 0
+Bootcamp : 110
+Trainees in Training: 
+JAVA : 62
+CSHARP : 84
+DEVOPS : 52
+DATA : 82
+BUSINESS : 70
+Trainees on the Waiting List: 
+JAVA : 0
+CSHARP : 0
+DEVOPS : 0
+DATA : 0
+BUSINESS : 0
 ---Month 15---
-Open Centres: 8
-Full Centres: 2
-Trainees in training: 368
-Trainees on waiting list: 0
-
+Open Centres: 
+Training hub : 4
+Tech Centre : 0
+Bootcamp : 2
+Full Centres: 
+Training hub : 1
+Tech Centre : 0
+Bootcamp : 0
+Closed Centres: 
+Training hub : 11
+Tech Centre : 1
+Bootcamp : 0
+Trainees in Training per Centre Type: 
+Training hub : 264
+Tech Centre : 0
+Bootcamp : 114
+Trainees in Training: 
+JAVA : 67
+CSHARP : 91
+DEVOPS : 59
+DATA : 87
+BUSINESS : 74
+Trainees on the Waiting List: 
+JAVA : 0
+CSHARP : 0
+DEVOPS : 0
+DATA : 0
+BUSINESS : 0
 ---Month 16---
-Open Centres: 8
-Full Centres: 2
-Trainees in training: 390
-Trainees on waiting list: 0
-
+Open Centres: 
+Training hub : 4
+Tech Centre : 0
+Bootcamp : 2
+Full Centres: 
+Training hub : 1
+Tech Centre : 0
+Bootcamp : 0
+Closed Centres: 
+Training hub : 11
+Tech Centre : 1
+Bootcamp : 0
+Trainees in Training per Centre Type: 
+Training hub : 283
+Tech Centre : 0
+Bootcamp : 125
+Trainees in Training: 
+JAVA : 71
+CSHARP : 97
+DEVOPS : 64
+DATA : 96
+BUSINESS : 80
+Trainees on the Waiting List: 
+JAVA : 0
+CSHARP : 0
+DEVOPS : 0
+DATA : 0
+BUSINESS : 0
 ---Month 17---
-Open Centres: 9
-Full Centres: 2
-Trainees in training: 411
-Trainees on waiting list: 0
-
+Open Centres: 
+Training hub : 4
+Tech Centre : 0
+Bootcamp : 2
+Full Centres: 
+Training hub : 1
+Tech Centre : 0
+Bootcamp : 0
+Closed Centres: 
+Training hub : 11
+Tech Centre : 2
+Bootcamp : 0
+Trainees in Training per Centre Type: 
+Training hub : 293
+Tech Centre : 0
+Bootcamp : 139
+Trainees in Training: 
+JAVA : 74
+CSHARP : 102
+DEVOPS : 69
+DATA : 98
+BUSINESS : 89
+Trainees on the Waiting List: 
+JAVA : 0
+CSHARP : 0
+DEVOPS : 0
+DATA : 0
+BUSINESS : 0
 ---Month 18---
-Open Centres: 9
-Full Centres: 2
-Trainees in training: 438
-Trainees on waiting list: 0
-
+Open Centres: 
+Training hub : 4
+Tech Centre : 0
+Bootcamp : 2
+Full Centres: 
+Training hub : 1
+Tech Centre : 0
+Bootcamp : 0
+Closed Centres: 
+Training hub : 11
+Tech Centre : 2
+Bootcamp : 0
+Trainees in Training per Centre Type: 
+Training hub : 301
+Tech Centre : 0
+Bootcamp : 150
+Trainees in Training: 
+JAVA : 78
+CSHARP : 105
+DEVOPS : 71
+DATA : 101
+BUSINESS : 96
+Trainees on the Waiting List: 
+JAVA : 2
+CSHARP : 1
+DEVOPS : 0
+DATA : 0
+BUSINESS : 1
 ---Month 19---
-Open Centres: 10
-Full Centres: 2
-Trainees in training: 463
-Trainees on waiting list: 0
-
+Open Centres: 
+Training hub : 5
+Tech Centre : 0
+Bootcamp : 2
+Full Centres: 
+Training hub : 1
+Tech Centre : 0
+Bootcamp : 0
+Closed Centres: 
+Training hub : 13
+Tech Centre : 2
+Bootcamp : 0
+Trainees in Training per Centre Type: 
+Training hub : 320
+Tech Centre : 0
+Bootcamp : 156
+Trainees in Training: 
+JAVA : 83
+CSHARP : 111
+DEVOPS : 77
+DATA : 103
+BUSINESS : 102
+Trainees on the Waiting List: 
+JAVA : 1
+CSHARP : 1
+DEVOPS : 1
+DATA : 1
+BUSINESS : 2
 ---Month 20---
-Open Centres: 10
-Full Centres: 4
-Trainees in training: 485
-Trainees on waiting list: 0
-
+Open Centres: 
+Training hub : 5
+Tech Centre : 0
+Bootcamp : 2
+Full Centres: 
+Training hub : 2
+Tech Centre : 0
+Bootcamp : 0
+Closed Centres: 
+Training hub : 13
+Tech Centre : 2
+Bootcamp : 0
+Trainees in Training per Centre Type: 
+Training hub : 339
+Tech Centre : 0
+Bootcamp : 166
+Trainees in Training: 
+JAVA : 86
+CSHARP : 114
+DEVOPS : 87
+DATA : 109
+BUSINESS : 109
+Trainees on the Waiting List: 
+JAVA : 0
+CSHARP : 0
+DEVOPS : 0
+DATA : 0
+BUSINESS : 0
 ---Month 21---
-Open Centres: 11
-Full Centres: 4
-Trainees in training: 510
-Trainees on waiting list: 0
-
+Open Centres: 
+Training hub : 7
+Tech Centre : 0
+Bootcamp : 2
+Full Centres: 
+Training hub : 2
+Tech Centre : 0
+Bootcamp : 0
+Closed Centres: 
+Training hub : 14
+Tech Centre : 2
+Bootcamp : 0
+Trainees in Training per Centre Type: 
+Training hub : 357
+Tech Centre : 0
+Bootcamp : 166
+Trainees in Training: 
+JAVA : 90
+CSHARP : 119
+DEVOPS : 91
+DATA : 112
+BUSINESS : 111
+Trainees on the Waiting List: 
+JAVA : 1
+CSHARP : 0
+DEVOPS : 0
+DATA : 0
+BUSINESS : 1
 ---Month 22---
-Open Centres: 11
-Full Centres: 4
-Trainees in training: 538
-Trainees on waiting list: 0
-
+Open Centres: 
+Training hub : 7
+Tech Centre : 0
+Bootcamp : 2
+Full Centres: 
+Training hub : 2
+Tech Centre : 0
+Bootcamp : 0
+Closed Centres: 
+Training hub : 14
+Tech Centre : 2
+Bootcamp : 0
+Trainees in Training per Centre Type: 
+Training hub : 387
+Tech Centre : 0
+Bootcamp : 166
+Trainees in Training: 
+JAVA : 98
+CSHARP : 122
+DEVOPS : 99
+DATA : 118
+BUSINESS : 116
+Trainees on the Waiting List: 
+JAVA : 0
+CSHARP : 0
+DEVOPS : 0
+DATA : 0
+BUSINESS : 0
 ---Month 23---
-Open Centres: 12
-Full Centres: 4
-Trainees in training: 567
-Trainees on waiting list: 0
-
+Open Centres: 
+Training hub : 7
+Tech Centre : 0
+Bootcamp : 2
+Full Centres: 
+Training hub : 2
+Tech Centre : 0
+Bootcamp : 0
+Closed Centres: 
+Training hub : 14
+Tech Centre : 3
+Bootcamp : 0
+Trainees in Training per Centre Type: 
+Training hub : 413
+Tech Centre : 0
+Bootcamp : 169
+Trainees in Training: 
+JAVA : 103
+CSHARP : 125
+DEVOPS : 105
+DATA : 127
+BUSINESS : 122
+Trainees on the Waiting List: 
+JAVA : 0
+CSHARP : 0
+DEVOPS : 0
+DATA : 0
+BUSINESS : 0
 ---Month 24---
-Open Centres: 12
-Full Centres: 5
-Trainees in training: 588
-Trainees on waiting list: 0
-
+Open Centres: 
+Training hub : 7
+Tech Centre : 0
+Bootcamp : 2
+Full Centres: 
+Training hub : 3
+Tech Centre : 0
+Bootcamp : 0
+Closed Centres: 
+Training hub : 14
+Tech Centre : 3
+Bootcamp : 0
+Trainees in Training per Centre Type: 
+Training hub : 425
+Tech Centre : 0
+Bootcamp : 182
+Trainees in Training: 
+JAVA : 109
+CSHARP : 132
+DEVOPS : 108
+DATA : 131
+BUSINESS : 127
+Trainees on the Waiting List: 
+JAVA : 0
+CSHARP : 0
+DEVOPS : 0
+DATA : 0
+BUSINESS : 0
 ---Month 25---
-Open Centres: 13
-Full Centres: 5
-Trainees in training: 609
-Trainees on waiting list: 0
-
+Open Centres: 
+Training hub : 7
+Tech Centre : 0
+Bootcamp : 2
+Full Centres: 
+Training hub : 3
+Tech Centre : 0
+Bootcamp : 0
+Closed Centres: 
+Training hub : 14
+Tech Centre : 4
+Bootcamp : 0
+Trainees in Training per Centre Type: 
+Training hub : 436
+Tech Centre : 0
+Bootcamp : 193
+Trainees in Training: 
+JAVA : 110
+CSHARP : 134
+DEVOPS : 111
+DATA : 138
+BUSINESS : 136
+Trainees on the Waiting List: 
+JAVA : 4
+CSHARP : 0
+DEVOPS : 0
+DATA : 0
+BUSINESS : 0
 ---Month 26---
-Open Centres: 13
-Full Centres: 5
-Trainees in training: 635
-Trainees on waiting list: 0
-
+Open Centres: 
+Training hub : 7
+Tech Centre : 0
+Bootcamp : 2
+Full Centres: 
+Training hub : 3
+Tech Centre : 0
+Bootcamp : 0
+Closed Centres: 
+Training hub : 14
+Tech Centre : 4
+Bootcamp : 0
+Trainees in Training per Centre Type: 
+Training hub : 441
+Tech Centre : 0
+Bootcamp : 222
+Trainees in Training: 
+JAVA : 120
+CSHARP : 137
+DEVOPS : 116
+DATA : 146
+BUSINESS : 144
+Trainees on the Waiting List: 
+JAVA : 0
+CSHARP : 0
+DEVOPS : 0
+DATA : 0
+BUSINESS : 0
 ---Month 27---
-Open Centres: 14
-Full Centres: 5
-Trainees in training: 656
-Trainees on waiting list: 0
-
+Open Centres: 
+Training hub : 7
+Tech Centre : 0
+Bootcamp : 2
+Full Centres: 
+Training hub : 3
+Tech Centre : 0
+Bootcamp : 0
+Closed Centres: 
+Training hub : 14
+Tech Centre : 5
+Bootcamp : 0
+Trainees in Training per Centre Type: 
+Training hub : 449
+Tech Centre : 0
+Bootcamp : 235
+Trainees in Training: 
+JAVA : 124
+CSHARP : 143
+DEVOPS : 118
+DATA : 152
+BUSINESS : 147
+Trainees on the Waiting List: 
+JAVA : 0
+CSHARP : 0
+DEVOPS : 0
+DATA : 0
+BUSINESS : 0
 ---Month 28---
-Open Centres: 14
-Full Centres: 5
-Trainees in training: 685
-Trainees on waiting list: 0
-
+Open Centres: 
+Training hub : 7
+Tech Centre : 0
+Bootcamp : 2
+Full Centres: 
+Training hub : 3
+Tech Centre : 0
+Bootcamp : 0
+Closed Centres: 
+Training hub : 14
+Tech Centre : 5
+Bootcamp : 0
+Trainees in Training per Centre Type: 
+Training hub : 455
+Tech Centre : 0
+Bootcamp : 250
+Trainees in Training: 
+JAVA : 129
+CSHARP : 149
+DEVOPS : 121
+DATA : 153
+BUSINESS : 153
+Trainees on the Waiting List: 
+JAVA : 0
+CSHARP : 0
+DEVOPS : 0
+DATA : 0
+BUSINESS : 0
 ---Month 29---
-Open Centres: 15
-Full Centres: 5
-Trainees in training: 714
-Trainees on waiting list: 0
-
+Open Centres: 
+Training hub : 7
+Tech Centre : 0
+Bootcamp : 2
+Full Centres: 
+Training hub : 3
+Tech Centre : 0
+Bootcamp : 0
+Closed Centres: 
+Training hub : 17
+Tech Centre : 5
+Bootcamp : 0
+Trainees in Training per Centre Type: 
+Training hub : 465
+Tech Centre : 0
+Bootcamp : 265
+Trainees in Training: 
+JAVA : 133
+CSHARP : 152
+DEVOPS : 126
+DATA : 161
+BUSINESS : 158
+Trainees on the Waiting List: 
+JAVA : 0
+CSHARP : 0
+DEVOPS : 0
+DATA : 0
+BUSINESS : 0
 ---Month 30---
-Open Centres: 15
-Full Centres: 6
-Trainees in training: 741
-Trainees on waiting list: 0
-
+Open Centres: 
+Training hub : 7
+Tech Centre : 0
+Bootcamp : 2
+Full Centres: 
+Training hub : 3
+Tech Centre : 0
+Bootcamp : 0
+Closed Centres: 
+Training hub : 17
+Tech Centre : 5
+Bootcamp : 0
+Trainees in Training per Centre Type: 
+Training hub : 484
+Tech Centre : 0
+Bootcamp : 272
+Trainees in Training: 
+JAVA : 139
+CSHARP : 155
+DEVOPS : 129
+DATA : 171
+BUSINESS : 162
+Trainees on the Waiting List: 
+JAVA : 0
+CSHARP : 0
+DEVOPS : 0
+DATA : 0
+BUSINESS : 0
 ---Month 31---
-Open Centres: 16
-Full Centres: 6
-Trainees in training: 770
-Trainees on waiting list: 0
-
+Open Centres: 
+Training hub : 8
+Tech Centre : 0
+Bootcamp : 2
+Full Centres: 
+Training hub : 3
+Tech Centre : 0
+Bootcamp : 0
+Closed Centres: 
+Training hub : 19
+Tech Centre : 5
+Bootcamp : 0
+Trainees in Training per Centre Type: 
+Training hub : 503
+Tech Centre : 0
+Bootcamp : 283
+Trainees in Training: 
+JAVA : 147
+CSHARP : 159
+DEVOPS : 132
+DATA : 179
+BUSINESS : 169
+Trainees on the Waiting List: 
+JAVA : 0
+CSHARP : 0
+DEVOPS : 0
+DATA : 0
+BUSINESS : 0
 ---Month 32---
-Open Centres: 16
-Full Centres: 7
-Trainees in training: 798
-Trainees on waiting list: 0
-
+Open Centres: 
+Training hub : 8
+Tech Centre : 0
+Bootcamp : 2
+Full Centres: 
+Training hub : 3
+Tech Centre : 0
+Bootcamp : 0
+Closed Centres: 
+Training hub : 19
+Tech Centre : 5
+Bootcamp : 0
+Trainees in Training per Centre Type: 
+Training hub : 510
+Tech Centre : 0
+Bootcamp : 302
+Trainees in Training: 
+JAVA : 154
+CSHARP : 163
+DEVOPS : 137
+DATA : 184
+BUSINESS : 174
+Trainees on the Waiting List: 
+JAVA : 0
+CSHARP : 0
+DEVOPS : 0
+DATA : 0
+BUSINESS : 0
 ---Month 33---
-Open Centres: 17
-Full Centres: 7
-Trainees in training: 821
-Trainees on waiting list: 0
-
+Open Centres: 
+Training hub : 9
+Tech Centre : 0
+Bootcamp : 2
+Full Centres: 
+Training hub : 3
+Tech Centre : 0
+Bootcamp : 0
+Closed Centres: 
+Training hub : 21
+Tech Centre : 5
+Bootcamp : 0
+Trainees in Training per Centre Type: 
+Training hub : 531
+Tech Centre : 0
+Bootcamp : 305
+Trainees in Training: 
+JAVA : 160
+CSHARP : 168
+DEVOPS : 142
+DATA : 190
+BUSINESS : 176
+Trainees on the Waiting List: 
+JAVA : 0
+CSHARP : 0
+DEVOPS : 0
+DATA : 0
+BUSINESS : 0
 ---Month 34---
-Open Centres: 17
-Full Centres: 7
-Trainees in training: 849
-Trainees on waiting list: 0
-
+Open Centres: 
+Training hub : 8
+Tech Centre : 0
+Bootcamp : 2
+Full Centres: 
+Training hub : 3
+Tech Centre : 0
+Bootcamp : 0
+Closed Centres: 
+Training hub : 22
+Tech Centre : 5
+Bootcamp : 0
+Trainees in Training per Centre Type: 
+Training hub : 550
+Tech Centre : 0
+Bootcamp : 315
+Trainees in Training: 
+JAVA : 163
+CSHARP : 180
+DEVOPS : 151
+DATA : 192
+BUSINESS : 179
+Trainees on the Waiting List: 
+JAVA : 0
+CSHARP : 0
+DEVOPS : 0
+DATA : 0
+BUSINESS : 0
 ---Month 35---
-Open Centres: 18
-Full Centres: 7
-Trainees in training: 875
-Trainees on waiting list: 0
-
+Open Centres: 
+Training hub : 8
+Tech Centre : 0
+Bootcamp : 2
+Full Centres: 
+Training hub : 4
+Tech Centre : 0
+Bootcamp : 0
+Closed Centres: 
+Training hub : 25
+Tech Centre : 5
+Bootcamp : 0
+Trainees in Training per Centre Type: 
+Training hub : 571
+Tech Centre : 0
+Bootcamp : 315
+Trainees in Training: 
+JAVA : 168
+CSHARP : 183
+DEVOPS : 157
+DATA : 197
+BUSINESS : 181
+Trainees on the Waiting List: 
+JAVA : 1
+CSHARP : 2
+DEVOPS : 0
+DATA : 2
+BUSINESS : 0
 ---Month 36---
-Open Centres: 18
-Full Centres: 7
-Trainees in training: 899
-Trainees on waiting list: 0
-
+Open Centres: 
+Training hub : 8
+Tech Centre : 0
+Bootcamp : 2
+Full Centres: 
+Training hub : 4
+Tech Centre : 0
+Bootcamp : 0
+Closed Centres: 
+Training hub : 25
+Tech Centre : 5
+Bootcamp : 0
+Trainees in Training per Centre Type: 
+Training hub : 596
+Tech Centre : 0
+Bootcamp : 325
+Trainees in Training: 
+JAVA : 174
+CSHARP : 190
+DEVOPS : 160
+DATA : 202
+BUSINESS : 195
+Trainees on the Waiting List: 
+JAVA : 0
+CSHARP : 0
+DEVOPS : 0
+DATA : 0
+BUSINESS : 0
 ---Month 37---
-Open Centres: 19
-Full Centres: 8
-Trainees in training: 919
-Trainees on waiting list: 0
-
+Open Centres: 
+Training hub : 9
+Tech Centre : 0
+Bootcamp : 2
+Full Centres: 
+Training hub : 4
+Tech Centre : 0
+Bootcamp : 0
+Closed Centres: 
+Training hub : 27
+Tech Centre : 5
+Bootcamp : 0
+Trainees in Training per Centre Type: 
+Training hub : 610
+Tech Centre : 0
+Bootcamp : 331
+Trainees in Training: 
+JAVA : 177
+CSHARP : 194
+DEVOPS : 168
+DATA : 205
+BUSINESS : 197
+Trainees on the Waiting List: 
+JAVA : 0
+CSHARP : 0
+DEVOPS : 0
+DATA : 0
+BUSINESS : 0
 ---Month 38---
-Open Centres: 19
-Full Centres: 8
-Trainees in training: 947
-Trainees on waiting list: 0
-
+Open Centres: 
+Training hub : 8
+Tech Centre : 0
+Bootcamp : 2
+Full Centres: 
+Training hub : 4
+Tech Centre : 0
+Bootcamp : 0
+Closed Centres: 
+Training hub : 28
+Tech Centre : 5
+Bootcamp : 0
+Trainees in Training per Centre Type: 
+Training hub : 628
+Tech Centre : 0
+Bootcamp : 337
+Trainees in Training: 
+JAVA : 181
+CSHARP : 200
+DEVOPS : 176
+DATA : 208
+BUSINESS : 200
+Trainees on the Waiting List: 
+JAVA : 0
+CSHARP : 0
+DEVOPS : 0
+DATA : 0
+BUSINESS : 0
 ---Month 39---
-Open Centres: 20
-Full Centres: 8
-Trainees in training: 972
-Trainees on waiting list: 0
-
+Open Centres: 
+Training hub : 8
+Tech Centre : 0
+Bootcamp : 2
+Full Centres: 
+Training hub : 4
+Tech Centre : 0
+Bootcamp : 0
+Closed Centres: 
+Training hub : 31
+Tech Centre : 5
+Bootcamp : 0
+Trainees in Training per Centre Type: 
+Training hub : 642
+Tech Centre : 0
+Bootcamp : 340
+Trainees in Training: 
+JAVA : 184
+CSHARP : 201
+DEVOPS : 180
+DATA : 213
+BUSINESS : 204
+Trainees on the Waiting List: 
+JAVA : 1
+CSHARP : 0
+DEVOPS : 2
+DATA : 1
+BUSINESS : 3
 ---Month 40---
-Open Centres: 20
-Full Centres: 8
-Trainees in training: 992
-Trainees on waiting list: 0
-
+Open Centres: 
+Training hub : 8
+Tech Centre : 0
+Bootcamp : 2
+Full Centres: 
+Training hub : 4
+Tech Centre : 0
+Bootcamp : 0
+Closed Centres: 
+Training hub : 31
+Tech Centre : 5
+Bootcamp : 0
+Trainees in Training per Centre Type: 
+Training hub : 674
+Tech Centre : 0
+Bootcamp : 340
+Trainees in Training: 
+JAVA : 190
+CSHARP : 206
+DEVOPS : 183
+DATA : 223
+BUSINESS : 212
+Trainees on the Waiting List: 
+JAVA : 0
+CSHARP : 0
+DEVOPS : 0
+DATA : 0
+BUSINESS : 0
 ---Month 41---
-Open Centres: 21
-Full Centres: 8
-Trainees in training: 1019
-Trainees on waiting list: 0
-
+Open Centres: 
+Training hub : 8
+Tech Centre : 0
+Bootcamp : 2
+Full Centres: 
+Training hub : 4
+Tech Centre : 0
+Bootcamp : 0
+Closed Centres: 
+Training hub : 34
+Tech Centre : 5
+Bootcamp : 0
+Trainees in Training per Centre Type: 
+Training hub : 702
+Tech Centre : 0
+Bootcamp : 340
+Trainees in Training: 
+JAVA : 196
+CSHARP : 213
+DEVOPS : 189
+DATA : 227
+BUSINESS : 217
+Trainees on the Waiting List: 
+JAVA : 0
+CSHARP : 2
+DEVOPS : 0
+DATA : 0
+BUSINESS : 0
 ---Month 42---
-Open Centres: 21
-Full Centres: 9
-Trainees in training: 1048
-Trainees on waiting list: 0
-
+Open Centres: 
+Training hub : 8
+Tech Centre : 0
+Bootcamp : 2
+Full Centres: 
+Training hub : 5
+Tech Centre : 0
+Bootcamp : 0
+Closed Centres: 
+Training hub : 34
+Tech Centre : 5
+Bootcamp : 0
+Trainees in Training per Centre Type: 
+Training hub : 725
+Tech Centre : 0
+Bootcamp : 340
+Trainees in Training: 
+JAVA : 198
+CSHARP : 219
+DEVOPS : 192
+DATA : 234
+BUSINESS : 222
+Trainees on the Waiting List: 
+JAVA : 0
+CSHARP : 0
+DEVOPS : 0
+DATA : 0
+BUSINESS : 0
 ---Month 43---
-Open Centres: 22
-Full Centres: 9
-Trainees in training: 1073
-Trainees on waiting list: 0
-
+Open Centres: 
+Training hub : 8
+Tech Centre : 0
+Bootcamp : 2
+Full Centres: 
+Training hub : 5
+Tech Centre : 0
+Bootcamp : 0
+Closed Centres: 
+Training hub : 34
+Tech Centre : 6
+Bootcamp : 0
+Trainees in Training per Centre Type: 
+Training hub : 730
+Tech Centre : 0
+Bootcamp : 348
+Trainees in Training: 
+JAVA : 200
+CSHARP : 219
+DEVOPS : 195
+DATA : 238
+BUSINESS : 226
+Trainees on the Waiting List: 
+JAVA : 2
+CSHARP : 3
+DEVOPS : 0
+DATA : 1
+BUSINESS : 1
 ---Month 44---
-Open Centres: 22
-Full Centres: 9
-Trainees in training: 1097
-Trainees on waiting list: 0
-
+Open Centres: 
+Training hub : 8
+Tech Centre : 0
+Bootcamp : 2
+Full Centres: 
+Training hub : 5
+Tech Centre : 0
+Bootcamp : 0
+Closed Centres: 
+Training hub : 34
+Tech Centre : 6
+Bootcamp : 0
+Trainees in Training per Centre Type: 
+Training hub : 757
+Tech Centre : 0
+Bootcamp : 348
+Trainees in Training: 
+JAVA : 207
+CSHARP : 228
+DEVOPS : 199
+DATA : 244
+BUSINESS : 227
+Trainees on the Waiting List: 
+JAVA : 0
+CSHARP : 0
+DEVOPS : 0
+DATA : 0
+BUSINESS : 0
 ---Month 45---
-Open Centres: 23
-Full Centres: 10
-Trainees in training: 1119
-Trainees on waiting list: 0
-
+Open Centres: 
+Training hub : 9
+Tech Centre : 0
+Bootcamp : 2
+Full Centres: 
+Training hub : 5
+Tech Centre : 0
+Bootcamp : 0
+Closed Centres: 
+Training hub : 36
+Tech Centre : 6
+Bootcamp : 0
+Trainees in Training per Centre Type: 
+Training hub : 780
+Tech Centre : 0
+Bootcamp : 348
+Trainees in Training: 
+JAVA : 210
+CSHARP : 231
+DEVOPS : 205
+DATA : 249
+BUSINESS : 233
+Trainees on the Waiting List: 
+JAVA : 0
+CSHARP : 0
+DEVOPS : 0
+DATA : 0
+BUSINESS : 0
 ---Month 46---
-Open Centres: 23
-Full Centres: 10
-Trainees in training: 1139
-Trainees on waiting list: 0
-
+Open Centres: 
+Training hub : 9
+Tech Centre : 0
+Bootcamp : 2
+Full Centres: 
+Training hub : 5
+Tech Centre : 0
+Bootcamp : 0
+Closed Centres: 
+Training hub : 36
+Tech Centre : 6
+Bootcamp : 0
+Trainees in Training per Centre Type: 
+Training hub : 787
+Tech Centre : 0
+Bootcamp : 371
+Trainees in Training: 
+JAVA : 219
+CSHARP : 236
+DEVOPS : 209
+DATA : 255
+BUSINESS : 239
+Trainees on the Waiting List: 
+JAVA : 0
+CSHARP : 0
+DEVOPS : 0
+DATA : 0
+BUSINESS : 0
 ---Month 47---
-Open Centres: 24
-Full Centres: 11
-Trainees in training: 1166
-Trainees on waiting list: 0
-
+Open Centres: 
+Training hub : 10
+Tech Centre : 0
+Bootcamp : 2
+Full Centres: 
+Training hub : 7
+Tech Centre : 0
+Bootcamp : 0
+Closed Centres: 
+Training hub : 38
+Tech Centre : 6
+Bootcamp : 0
+Trainees in Training per Centre Type: 
+Training hub : 808
+Tech Centre : 0
+Bootcamp : 371
+Trainees in Training: 
+JAVA : 224
+CSHARP : 240
+DEVOPS : 212
+DATA : 261
+BUSINESS : 242
+Trainees on the Waiting List: 
+JAVA : 0
+CSHARP : 0
+DEVOPS : 0
+DATA : 0
+BUSINESS : 0
 ---Month 48---
-Open Centres: 24
-Full Centres: 11
-Trainees in training: 1193
-Trainees on waiting list: 0
-
----Month 49---
-Open Centres: 25
-Full Centres: 11
-Trainees in training: 1218
-Trainees on waiting list: 0
-
----Month 50---
-Open Centres: 25
-Full Centres: 11
-Trainees in training: 1242
-Trainees on waiting list: 0
-
----Month 51---
-Open Centres: 26
-Full Centres: 11
-Trainees in training: 1271
-Trainees on waiting list: 0
-
----Month 52---
-Open Centres: 26
-Full Centres: 11
-Trainees in training: 1300
-Trainees on waiting list: 0
-
----Month 53---
-Open Centres: 27
-Full Centres: 12
-Trainees in training: 1327
-Trainees on waiting list: 0
-
----Month 54---
-Open Centres: 27
-Full Centres: 12
-Trainees in training: 1348
-Trainees on waiting list: 0
-
----Month 55---
-Open Centres: 28
-Full Centres: 12
-Trainees in training: 1376
-Trainees on waiting list: 0
-
----Month 56---
-Open Centres: 28
-Full Centres: 12
-Trainees in training: 1402
-Trainees on waiting list: 0
-
----Month 57---
-Open Centres: 29
-Full Centres: 12
-Trainees in training: 1431
-Trainees on waiting list: 0
-
----Month 58---
-Open Centres: 29
-Full Centres: 13
-Trainees in training: 1456
-Trainees on waiting list: 0
-
----Month 59---
-Open Centres: 30
-Full Centres: 14
-Trainees in training: 1482
-Trainees on waiting list: 0
-
----Month 60---
-Open Centres: 30
-Full Centres: 14
-Trainees in training: 1506
-Trainees on waiting list: 0
-
----Month 61---
-Open Centres: 31
-Full Centres: 14
-Trainees in training: 1532
-Trainees on waiting list: 0
-
----Month 62---
-Open Centres: 31
-Full Centres: 14
-Trainees in training: 1561
-Trainees on waiting list: 0
-
----Month 63---
-Open Centres: 32
-Full Centres: 15
-Trainees in training: 1583
-Trainees on waiting list: 0
-
----Month 64---
-Open Centres: 32
-Full Centres: 15
-Trainees in training: 1611
-Trainees on waiting list: 0
-
----Month 65---
-Open Centres: 33
-Full Centres: 15
-Trainees in training: 1639
-Trainees on waiting list: 0
-
----Month 66---
-Open Centres: 33
-Full Centres: 15
-Trainees in training: 1664
-Trainees on waiting list: 0
-
----Month 67---
-Open Centres: 34
-Full Centres: 16
-Trainees in training: 1687
-Trainees on waiting list: 0
-
----Month 68---
-Open Centres: 34
-Full Centres: 16
-Trainees in training: 1707
-Trainees on waiting list: 0
-
----Month 69---
-Open Centres: 35
-Full Centres: 16
-Trainees in training: 1730
-Trainees on waiting list: 0
-
----Month 70---
-Open Centres: 35
-Full Centres: 16
-Trainees in training: 1753
-Trainees on waiting list: 0
-
----Month 71---
-Open Centres: 36
-Full Centres: 16
-Trainees in training: 1774
-Trainees on waiting list: 0
-
----Month 72---
-Open Centres: 36
-Full Centres: 16
-Trainees in training: 1798
-Trainees on waiting list: 0
-
----Month 73---
-Open Centres: 37
-Full Centres: 16
-Trainees in training: 1820
-Trainees on waiting list: 0
-
----Month 74---
-Open Centres: 37
-Full Centres: 17
-Trainees in training: 1840
-Trainees on waiting list: 0
-
----Month 75---
-Open Centres: 38
-Full Centres: 17
-Trainees in training: 1868
-Trainees on waiting list: 0
-
----Month 76---
-Open Centres: 38
-Full Centres: 18
-Trainees in training: 1893
-Trainees on waiting list: 0
-
----Month 77---
-Open Centres: 39
-Full Centres: 18
-Trainees in training: 1921
-Trainees on waiting list: 0
-
----Month 78---
-Open Centres: 39
-Full Centres: 18
-Trainees in training: 1945
-Trainees on waiting list: 0
-
----Month 79---
-Open Centres: 40
-Full Centres: 18
-Trainees in training: 1969
-Trainees on waiting list: 0
-
----Month 80---
-Open Centres: 40
-Full Centres: 18
-Trainees in training: 1989
-Trainees on waiting list: 0
-
----Month 81---
-Open Centres: 41
-Full Centres: 18
-Trainees in training: 2017
-Trainees on waiting list: 0
-
----Month 82---
-Open Centres: 41
-Full Centres: 19
-Trainees in training: 2037
-Trainees on waiting list: 0
-
----Month 83---
-Open Centres: 42
-Full Centres: 19
-Trainees in training: 2059
-Trainees on waiting list: 0
-
----Month 84---
-Open Centres: 42
-Full Centres: 19
-Trainees in training: 2079
-Trainees on waiting list: 0
-
----Month 85---
-Open Centres: 43
-Full Centres: 19
-Trainees in training: 2105
-Trainees on waiting list: 0
-
----Month 86---
-Open Centres: 43
-Full Centres: 20
-Trainees in training: 2127
-Trainees on waiting list: 0
-
----Month 87---
-Open Centres: 44
-Full Centres: 20
-Trainees in training: 2155
-Trainees on waiting list: 0
-
----Month 88---
-Open Centres: 44
-Full Centres: 20
-Trainees in training: 2184
-Trainees on waiting list: 0
-
----Month 89---
-Open Centres: 45
-Full Centres: 20
-Trainees in training: 2209
-Trainees on waiting list: 0
-
----Month 90---
-Open Centres: 45
-Full Centres: 20
-Trainees in training: 2231
-Trainees on waiting list: 0
-
----Month 91---
-Open Centres: 46
-Full Centres: 21
-Trainees in training: 2251
-Trainees on waiting list: 0
-
----Month 92---
-Open Centres: 46
-Full Centres: 21
-Trainees in training: 2272
-Trainees on waiting list: 0
-
----Month 93---
-Open Centres: 47
-Full Centres: 21
-Trainees in training: 2296
-Trainees on waiting list: 0
-
----Month 94---
-Open Centres: 47
-Full Centres: 22
-Trainees in training: 2325
-Trainees on waiting list: 0
-
----Month 95---
-Open Centres: 48
-Full Centres: 22
-Trainees in training: 2350
-Trainees on waiting list: 0
-
----Month 96---
-Open Centres: 48
-Full Centres: 22
-Trainees in training: 2374
-Trainees on waiting list: 0
-
----Month 97---
-Open Centres: 49
-Full Centres: 22
-Trainees in training: 2398
-Trainees on waiting list: 0
-
----Month 98---
-Open Centres: 49
-Full Centres: 23
-Trainees in training: 2420
-Trainees on waiting list: 0
-
----Month 99---
-Open Centres: 50
-Full Centres: 23
-Trainees in training: 2443
-Trainees on waiting list: 0
-
----Month 100---
-Open Centres: 50
-Full Centres: 23
-Trainees in training: 2472
-Trainees on waiting list: 0
-
----Month 101---
-Open Centres: 51
-Full Centres: 23
-Trainees in training: 2501
-Trainees on waiting list: 0
-
----Month 102---
-Open Centres: 51
-Full Centres: 23
-Trainees in training: 2522
-Trainees on waiting list: 0
-
----Month 103---
-Open Centres: 52
-Full Centres: 24
-Trainees in training: 2546
-Trainees on waiting list: 0
-
----Month 104---
-Open Centres: 52
-Full Centres: 25
-Trainees in training: 2570
-Trainees on waiting list: 0
-
----Month 105---
-Open Centres: 53
-Full Centres: 25
-Trainees in training: 2596
-Trainees on waiting list: 0
-
----Month 106---
-Open Centres: 53
-Full Centres: 25
-Trainees in training: 2620
-Trainees on waiting list: 0
-
----Month 107---
-Open Centres: 54
-Full Centres: 25
-Trainees in training: 2646
-Trainees on waiting list: 0
-
----Month 108---
-Open Centres: 54
-Full Centres: 25
-Trainees in training: 2667
-Trainees on waiting list: 0
-
----Month 109---
-Open Centres: 55
-Full Centres: 25
-Trainees in training: 2692
-Trainees on waiting list: 0
-
----Month 110---
-Open Centres: 55
-Full Centres: 25
-Trainees in training: 2716
-Trainees on waiting list: 0
-
----Month 111---
-Open Centres: 56
-Full Centres: 26
-Trainees in training: 2745
-Trainees on waiting list: 0
-
----Month 112---
-Open Centres: 56
-Full Centres: 26
-Trainees in training: 2765
-Trainees on waiting list: 0
-
----Month 113---
-Open Centres: 57
-Full Centres: 26
-Trainees in training: 2785
-Trainees on waiting list: 0
-
----Month 114---
-Open Centres: 57
-Full Centres: 26
-Trainees in training: 2808
-Trainees on waiting list: 0
-
----Month 115---
-Open Centres: 58
-Full Centres: 27
-Trainees in training: 2834
-Trainees on waiting list: 0
-
----Month 116---
-Open Centres: 58
-Full Centres: 28
-Trainees in training: 2856
-Trainees on waiting list: 0
-
----Month 117---
-Open Centres: 59
-Full Centres: 28
-Trainees in training: 2885
-Trainees on waiting list: 0
-
----Month 118---
-Open Centres: 59
-Full Centres: 28
-Trainees in training: 2913
-Trainees on waiting list: 0
-
----Month 119---
-Open Centres: 60
-Full Centres: 28
-Trainees in training: 2936
-Trainees on waiting list: 0
-
----Month 120---
-Open Centres: 60
-Full Centres: 28
-Trainees in training: 2956
-Trainees on waiting list: 0
-
+Open Centres: 
+Training hub : 10
+Tech Centre : 0
+Bootcamp : 2
+Full Centres: 
+Training hub : 7
+Tech Centre : 0
+Bootcamp : 0
+Closed Centres: 
+Training hub : 38
+Tech Centre : 6
+Bootcamp : 0
+Trainees in Training per Centre Type: 
+Training hub : 822
+Tech Centre : 0
+Bootcamp : 385
+Trainees in Training: 
+JAVA : 229
+CSHARP : 247
+DEVOPS : 217
+DATA : 267
+BUSINESS : 247
+Trainees on the Waiting List: 
+JAVA : 0
+CSHARP : 0
+DEVOPS : 0
+DATA : 0
+BUSINESS : 0

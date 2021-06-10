@@ -1,6 +1,8 @@
 package com.sparta.SimulationProject;
 
-import com.sparta.SimulationProject.Model.*;
+import com.sparta.SimulationProject.Model.Centre;
+import com.sparta.SimulationProject.Model.CentreType;
+import com.sparta.SimulationProject.Model.Trainee;
 
 import java.util.*;
 

@@ -1,4 +1,4 @@
-package SimulationProject;
+package com.sparta.SimulationProject;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;

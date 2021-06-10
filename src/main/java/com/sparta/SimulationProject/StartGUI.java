@@ -1,4 +1,4 @@
-package SimulationProject;
+package com.sparta.SimulationProject;
 
 import javafx.scene.Scene;
 import javafx.stage.Stage;

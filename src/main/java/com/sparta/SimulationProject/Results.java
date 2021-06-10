@@ -1,4 +1,4 @@
-package SimulationProject;
+package com.sparta.SimulationProject;
 
 import javafx.scene.Group;
 import javafx.scene.Scene;
@@ -10,8 +10,8 @@ import javafx.scene.image.ImageView;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
-import static SimulationProject.LengthOfTime.simulationResult;
-import static SimulationProject.WelcomePage.outputSelection;
+import static com.sparta.SimulationProject.LengthOfTime.simulationResult;
+import static com.sparta.SimulationProject.WelcomePage.outputSelection;
 
 public class Results {
     static Main m = new Main();

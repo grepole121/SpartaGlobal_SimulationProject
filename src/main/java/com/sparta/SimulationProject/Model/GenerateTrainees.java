@@ -1,7 +1,5 @@
 package com.sparta.SimulationProject.Model;
 
-import com.sparta.SimulationProject.RandomGenerator;
-
 import java.util.ArrayList;
 import java.util.List;
 

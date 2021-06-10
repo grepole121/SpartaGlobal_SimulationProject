@@ -1,6 +1,5 @@
 package com.sparta.SimulationProject;
 
-
 import com.sparta.SimulationProject.Model.*;
 
 import java.util.ArrayList;

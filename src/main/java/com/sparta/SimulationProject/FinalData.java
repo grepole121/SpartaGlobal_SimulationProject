@@ -1,7 +1,5 @@
 package com.sparta.SimulationProject;
 
-import com.sparta.SimulationProject.Model.Trainee;
-
 import java.util.HashMap;
 
 public class FinalData {

@@ -1,6 +1,4 @@
-package SimulationProject;
-
-import java.util.HashMap;
+package com.sparta.SimulationProject;
 
 import static com.sparta.SimulationProject.FinalData.getClosedCentres;
 
@@ -33,14 +31,14 @@ public class Starter {
                 output=Printer.print();
             }
         } else if (selectionOutput == 2) {
-            OutputToTXT.outputToTXT(data);
+            OutputToTXT.outputToTXT();
         } else if (selectionOutput == 3) {
 
             if (finalMonth) {
                 output=Printer.printFinalMonth();
-                OutputToTXT.outputToTXTFinalMonth(data);
+                OutputToTXT.outputToTXTFinalMonth();
             } else {
-                OutputToTXT.outputToTXT(data);
+                OutputToTXT.outputToTXT();
                 output=Printer.print();
             }
     }

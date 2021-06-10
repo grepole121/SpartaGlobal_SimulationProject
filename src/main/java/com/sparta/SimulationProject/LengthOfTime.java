@@ -1,4 +1,4 @@
-package SimulationProject;
+package com.sparta.SimulationProject;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -16,9 +16,9 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-import static SimulationProject.Results.ResultsScene;
+import static com.sparta.SimulationProject.Results.ResultsScene;
 
-import static SimulationProject.WelcomePage.outputSelection;
+import static com.sparta.SimulationProject.WelcomePage.outputSelection;
 
 public class LengthOfTime {
     static String simulationResult;

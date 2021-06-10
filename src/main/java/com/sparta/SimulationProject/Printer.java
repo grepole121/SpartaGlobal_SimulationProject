@@ -2,10 +2,6 @@ package com.sparta.SimulationProject;
 
 public class Printer {
 
-    public static void print(String message) {
-        System.out.println(message);
-    }
-
     public static String print() {
         String output = "";
         for (int i = 1; i <= FinalData.getTraineesTraining().size(); i++) {
@@ -30,7 +26,7 @@ public class Printer {
             output += ("Trainees in Training per Centre Type: \n" + "Training hub : " + centreType[0] + "\n" + "Tech Centre : " + centreType[1] + "\n" + "Bootcamp : " + centreType[2]+ "\n" );
             output += ("Trainees in Training: \n" + "JAVA : " + training[0] + "\n" + "CSHARP : " + training[1] + "\n" + "DEVOPS : " + training[2] + "\n" + "DATA : " + training[3] + "\n" + "BUSINESS : " + training[4]+ "\n" );
             output += ("Trainees on the Waiting List: \n" + "JAVA : " + waiting[0] + "\n" + "CSHARP : " + waiting[1] + "\n" + "DEVOPS : " + waiting[2] + "\n" + "DATA : " + waiting[3] + "\n" + "BUSINESS : " + waiting[4]+ "\n" );
-            return output;   }
+             }
         return output;
     }
 
