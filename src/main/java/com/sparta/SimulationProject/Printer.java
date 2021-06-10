@@ -9,24 +9,52 @@ public class Printer {
         System.out.println(message);
     }
 
-    public static void print(HashMap<Integer, int[]> simulationData) {
+    public static String print(HashMap<Integer, int[]> simulationData) {
+        String output = "";
         for (int i = 1; i <= simulationData.size(); i++) {
-            int[] dataForMonth = simulationData.get(i);
+            int[] open = FinalData.getOpenCentres(i);
+            int[] full = FinalData.getFullCentres(i);
+            int[] closed = FinalData.getClosedCentres(i);
+            int[] training = FinalData.getTraineesTraining(i);
+            int[] waiting = FinalData.getTraineesOnWaitingList(i);
             System.out.println("---Month " + i + "---");
-            System.out.println("Open Centres: " + dataForMonth[0]);
-            System.out.println("Full Centres: " + dataForMonth[1]);
-            System.out.println("Trainees in Training: " + dataForMonth[2]);
-       //     System.out.println("Trainees on the Waiting List: " + dataForMonth[3] + "\n");
+            System.out.println("Open Centres: \n" + "Training hub : " + open[0] + "\n" + "Training Centre : " + open[1] + "\n" + "Bootcamp : " + open[2]);
+            System.out.println("Full Centres: \n" + "Training hub : " + full[0] + "\n" + "Training Centre : " + full[1] + "\n" + "Bootcamp : " + full[2]);
+            System.out.println("Closed Centres: \n" + "Training hub : " + closed[0] + "\n" + "Training Centre : " + closed[1] + "\n" + "Bootcamp : " + closed[2]);
+            System.out.println("Trainees in Training: \n" + "Training hub : " + training[0] + "\n" + "Training Centre : " + training[1] + "\n" + "Bootcamp : " + training[2]);
+            System.out.println("Trainees on the Waiting List: \n" + "JAVA : " + waiting[0] + "\n" + "CSHARP : " + waiting[1] + "\n" + "DEVOPS : " + waiting[2]+ "\n" + "DATA : " + waiting[3]+ "\n" + "BUSINESS : " + waiting[4]);
+            output+=("---Month " + i + "---");
+            output+=("Open Centres: \n" + "Training hub : " + open[0] + "\n" + "Training Centre : " + open[1] + "\n" + "Bootcamp : " + open[2]);
+            output+=("Full Centres: \n" + "Training hub : " + full[0] + "\n" + "Training Centre : " + full[1] + "\n" + "Bootcamp : " + full[2]);
+            output+=("Closed Centres: \n" + "Training hub : " + closed[0] + "\n" + "Training Centre : " + closed[1] + "\n" + "Bootcamp : " + closed[2]);
+            output+=("Trainees in Training: \n" + "Training hub : " + training[0] + "\n" + "Training Centre : " + training[1] + "\n" + "Bootcamp : " + training[2]);
+            output+=("Trainees on the Waiting List: \n" + "JAVA : " + waiting[0] + "\n" + "CSHARP : " + waiting[1] + "\n" + "DEVOPS : " + waiting[2]+ "\n" + "DATA : " + waiting[3]+ "\n" + "BUSINESS : " + waiting[4]);
         }
+        return output;
     }
 
-    public static void printFinalMonth (HashMap<Integer, int[]> simulationData) {
-        int[] dataForFinalMonth = simulationData.get(simulationData.size());
-        System.out.println("---Final Month " + simulationData.size() + "---\n"
-                + "Open Centres: " + dataForFinalMonth[0] + "\n"
-                + "Full Centres: " + dataForFinalMonth[1] + "\n"
-                + "Trainees in Training: " + dataForFinalMonth[2] + "\n"
-                + "Trainees on the Waiting List: " + dataForFinalMonth[3] + "\n");
+    public static String printFinalMonth (HashMap<Integer, int[]> simulationData) {
+        String output = "";
+        int finalMonth = simulationData.size();
+        int[] open = FinalData.getOpenCentres(finalMonth);
+        int[] full = FinalData.getFullCentres(finalMonth);
+        int[] closed = FinalData.getClosedCentres(finalMonth);
+        int[] training = FinalData.getTraineesTraining(finalMonth);
+        int[] waiting = FinalData.getTraineesOnWaitingList(finalMonth);
+        System.out.println("---Final Month " + simulationData.size() + "---\n");
+        System.out.println("Open Centres: \n" + "Training hub : " + open[0] + "\n" + "Training Centre : " + open[1] + "\n" + "Bootcamp : " + open[2]);
+        System.out.println("Full Centres: \n" + "Training hub : " + full[0] + "\n" + "Training Centre : " + full[1] + "\n" + "Bootcamp : " + full[2]);
+        System.out.println("Closed Centres: \n" + "Training hub : " + closed[0] + "\n" + "Training Centre : " + closed[1] + "\n" + "Bootcamp : " + closed[2]);
+        System.out.println("Trainees in Training: \n" + "Training hub : " + training[0] + "\n" + "Training Centre : " + training[1] + "\n" + "Bootcamp : " + training[2]);
+        System.out.println("Trainees on the Waiting List: \n" + "JAVA : " + waiting[0] + "\n" + "CSHARP : " + waiting[1] + "\n" + "DEVOPS : " + waiting[2]+ "\n" + "DATA : " + waiting[3]+ "\n" + "BUSINESS : " + waiting[4]);
 
+        output+=("---Final Month " + simulationData.size() + "---\n");
+        output+=("Open Centres: \n" + "Training hub : " + open[0] + "\n" + "Training Centre : " + open[1] + "\n" + "Bootcamp : " + open[2]);
+        output+=("Full Centres: \n" + "Training hub : " + full[0] + "\n" + "Training Centre : " + full[1] + "\n" + "Bootcamp : " + full[2]);
+        output+=("Closed Centres: \n" + "Training hub : " + closed[0] + "\n" + "Training Centre : " + closed[1] + "\n" + "Bootcamp : " + closed[2]);
+        output+=("Trainees in Training: \n" + "Training hub : " + training[0] + "\n" + "Training Centre : " + training[1] + "\n" + "Bootcamp : " + training[2]);
+        output+=("Trainees on the Waiting List: \n" + "JAVA : " + waiting[0] + "\n" + "CSHARP : " + waiting[1] + "\n" + "DEVOPS : " + waiting[2]+ "\n" + "DATA : " + waiting[3]+ "\n" + "BUSINESS : " + waiting[4]);
+        return output;
     }
+
 }
