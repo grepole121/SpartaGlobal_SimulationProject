@@ -20,7 +20,7 @@ the tools used by the team include
 
 ### User Guide
 
-upon starting the program the ui will open and have two drop-down boxes that will allow a user to input how they would like to have the data outputted to them, the options are to only show the final month or all month and a option to display the output data or to have it export in a .txt file. after the user confirms there choice by clicking next another screen will display and have another choice of how the user would like to enter the length of time the simulation will run for, the three options are years,months or both. if years or months are selected then a single text box will be there to enter the number of years or months respectivly, if both are selected there will be two text boxes, the leftmost box will be for the years andthe rightmost box for months. once all the selections are made and the timeframe specified the program will procced with the simulatation, once the simulation is complete 
+Upon starting the program the UI will open and have two drop-down boxes that will allow a user to input how they would like to have the data outputted to them, the options are to only show the final month or all month and a option to display the output data or to have it export in a .txt file. After the user confirms there choice by clicking next another screen will display and have another choice of how the user would like to enter the length of time the simulation will run for, the three options are years,months or both. if years or months are selected then a single text box will be there to enter the number of years or months respectivly, if both are selected there will be two text boxes, the leftmost box will be for the years andthe rightmost box for months. once all the selections are made and the timeframe specified the program will procced with the simulatation, once the simulation is complete the data will be presented to the user in the format they selected. The user will then be given two options the leftmost one will restart the program and the left button will exit the program.
 
 
 #### CentreType
@@ -40,7 +40,13 @@ upon starting the program the ui will open and have two drop-down boxes that wil
 |  Return Type   	|    Call Method    	|                                  Description                                   	|
 |:--------------:	|:-----------------:	|:------------------------------------------------------------------------------:	|
 | List<trainee>  	| generateTrainees  	| Returns a list of a given number of trainees with a randomly assigned course.  	|
+	
 #### Trainee
+	
+	| Return Type  	| Call Method     	| Description                                  	|
+|--------------	|-----------------	|----------------------------------------------	|
+| CourseType   	| getCourseType() 	| Returns the coursetype of the trainee object 	|
+	
 #### Bootcamp
 
 | Return Type  	| Call Method                  	| Description                                       	|
