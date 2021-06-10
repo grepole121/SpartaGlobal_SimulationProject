@@ -24,14 +24,73 @@ upon starting the program the ui will open and have two drop-down boxes that wil
 
 
 #### CentreType
+
+| Return Type  	|     Call Method      	|            Description            	|
+|:------------:	|:--------------------:	|:---------------------------------:	|
+|  CentreType  	| getRandomCentreType  	| Returns a random type of centre.  	|
+
 #### CourseType
+
+| Return Type  	|     Call Method      	|            Description            	|
+|:------------:	|:--------------------:	|:---------------------------------:	|
+|  CourseType  	| getRandomCourseType  	| Returns a random type of course.  	|
+
 #### GenerateTrainees
+
+|  Return Type   	|    Call Method    	|                                  Description                                   	|
+|:--------------:	|:-----------------:	|:------------------------------------------------------------------------------:	|
+| List<trainee>  	| generateTrainees  	| Returns a list of a given number of trainees with a randomly assigned course.  	|
 #### Trainee
 #### Bootcamp
+
+| Return Type  	| Call Method                  	| Description                                       	|
+|--------------	|------------------------------	|---------------------------------------------------	|
+| int          	| getMAX_CAPACITY              	| Returns the Bootcamp’s max capacity.              	|
+| Int          	| getNumberOfTraineesInCentre  	| Returns the number of trainees in the centre.     	|
+| Int          	| newTraineeIntake             	| Returns a random number of trainees to intake.    	|
+| Void         	| addTrainees                  	| Add trainees to the simulation.                   	|
+| Boolean      	| isFull                       	| If the Bootcamp is full or not.                   	|
+| Void         	| setFull                      	| Set the bootcamp to full.                         	|
+| Boolean      	| lowCapacity                  	| If the Bootcamp has less than 10 members or not.  	|
+| CentreType   	| getCentreType                	| Returns the centre type.                          	|
+  
 #### TechCentre
+  
+  | Return Type  	|         Call Method          	|                     Description                      	|
+|:------------:	|:----------------------------:	|:----------------------------------------------------:	|
+|     int      	|       getMAX_CAPACITY        	|       Returns the Tech Centre’s max capacity.        	|
+|     Int      	| getNumberOfTraineesInCentre  	|    Returns the number of trainees in the centre.     	|
+|     Int      	|       newTraineeIntake       	|    Returns a random number of trainees to intake.    	|
+|     Void     	|         addTrainees          	|           Add trainees to the simulation.            	|
+|   Boolean    	|            isFull            	|          If the Tech Centre is full or not.          	|
+|     Void     	|           setFull            	|             Set the Tech Centre to full.             	|
+|   Boolean    	|         lowCapacity          	| If the Tech Centre has less than 10 members or not.  	|
+|  CentreType  	|        getCentreType         	|               Returns the centre type.               	|
+  
 #### TrainingHub
+  
+  | Return Type  	|         Call Method          	|                     Description                      	|
+|:------------:	|:----------------------------:	|:----------------------------------------------------:	|
+|     int      	|       getMAX_CAPACITY        	|       Returns the Tech Centre’s max capacity.        	|
+|     Int      	| getNumberOfTraineesInCentre  	|    Returns the number of trainees in the centre.     	|
+|     Int      	|       newTraineeIntake       	|    Returns a random number of trainees to intake.    	|
+|     Void     	|         addTrainees          	|           Add trainees to the simulation.            	|
+|   Boolean    	|            isFull            	|          If the Tech Centre is full or not.          	|
+|     Void     	|           setFull            	|             Set the Tech Centre to full.             	|
+|   Boolean    	|         lowCapacity          	| If the Tech Centre has less than 10 members or not.  	|
+|  CentreType  	|        getCentreType         	|               Returns the centre type.               	|
+  
 #### Simulation
+  
+  | Return Type              	| Call Method    	| Description                                                                                                                                  	|
+|--------------------------	|----------------	|----------------------------------------------------------------------------------------------------------------------------------------------	|
+| void 	| runSimulation  	| Takes an int input as number if iterations to run and stores the results in the FinalData class    	|
+  
 #### RandomGenerator
+  | Return Type    	| Call Method   	| Description                           	|
+|----------------	|---------------	|---------------------------------------	|
+| List<Trainee>  	| newTrainees   	| Returns a list of random trainees.    	|
+| List<Centre>   	| randomCentre  	| Returns a list of random centres.     	|
 #### Starter
 #### UserInput
 #### FinalData
