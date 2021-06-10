@@ -87,13 +87,50 @@ upon starting the program the ui will open and have two drop-down boxes that wil
 | void 	| runSimulation  	| Takes an int input as number if iterations to run and stores the results in the FinalData class    	|
   
 #### RandomGenerator
+  
   | Return Type    	| Call Method   	| Description                           	|
 |----------------	|---------------	|---------------------------------------	|
 | List<Trainee>  	| newTrainees   	| Returns a list of random trainees.    	|
 | List<Centre>   	| randomCentre  	| Returns a list of random centres.     	|
+  
 #### Starter
+  
+  |  Return Type  	|  Call Method  	|                       Description                       	|
+|:-------------:	|:-------------:	|:-------------------------------------------------------:	|
+|     Void      	|     start     	| The main control method that will start the program.    	|
+| List<Centre>  	| randomCentre  	| Returns a list of random centres.                       	|
+  
 #### UserInput
+  
+  | Return Type  	| Call Method  	| Description                               	|
+|--------------	|--------------	|-------------------------------------------	|
+| Int          	| inputInt     	| Returns the number the user has input.    	|
+  
 #### FinalData
+  
+  | Return Type              	| Call Method                 	| Description                                                         	|
+|--------------------------	|-----------------------------	|---------------------------------------------------------------------	|
+| Void                     	| addToClosedCentres          	| Add closed centres to the closedCentres hashmap.                    	|
+| HashMap<Integer, int[]>  	| getOpenCentres              	| Returns the HashMap openCentres.                                    	|
+| Void                     	| addToOpenCentres            	| Add open centres to the openCentresInput HashMap.                   	|
+| HashMap<Integer, int[]>  	| getFullCentres              	| Returns the full centres.                                           	|
+| Void                     	| addToFullCentres            	| Add the full centres to the fullCentresInput HashMap.               	|
+| HashMap<Integer, int[]>  	| getTraineesTraining         	| Returns the hashmap traineesTraining.                               	|
+| Void                     	| addToTraineesTraining       	| Add the trainees in training to the traineesTrainingInput HashMap.  	|
+| HashMap<Integer, int[]>  	| getTraineesOnWaitingList    	| Returns the HashMap of waiting trainees.                            	|
+| Void                     	| addToTraineesOnWaitingList  	| Add waiting trainees to the traineesOnWaitingListInput HashMap.     	|
+  
 #### OutputToTXT
+  
+  | Return Type  	|      Call Method      	|                        Description                        	|
+|:------------:	|:---------------------:	|:---------------------------------------------------------:	|
+| Void         	| outputToTXT           	| Uses BufferWriter to output to txt file                   	|
+| Void         	| outpuToTXTFinalMonth  	| Uses BufferWriter to output the final month to txt file.  	|
+  
 #### Printer
 
+  | Return Type  	| Call Method                             	| Description                                        	|
+|--------------	|-----------------------------------------	|----------------------------------------------------	|
+| Void         	| Print(String message)                   	| Prints message                                     	|
+| Void         	| Print(HashMap<Integer, int[]>           	| Prints the details of output                       	|
+| Void         	| rintFinalMonth(HashMap<Integer, int[]>  	| Prints the details of output for the final month.  	|
