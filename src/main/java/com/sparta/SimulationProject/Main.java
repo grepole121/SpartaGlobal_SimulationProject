@@ -1,10 +1,22 @@
-package com.sparta.SimulationProject;
+package SimulationProject;
 
-public class Main
-{
-    public static void main( String[] args )
-    {
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
-        Starter.start();
+import java.io.IOException;
+
+public class Main extends Application {
+ StartGUI v = new StartGUI();
+    public static void main(String[] args) {
+    launch(args);
     }
+
+    @Override
+    public void start(Stage primaryStage) throws Exception{
+        v.generateView(primaryStage,WelcomePage.welcomePage(primaryStage));
+    }
+
 }
