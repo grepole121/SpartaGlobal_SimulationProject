@@ -23,7 +23,7 @@ public class TrainingHub implements Centre {
 
     @Override
     public int getNumberOfTraineesInCentre() {
-        return numberOfTraineesInCentre;
+        return currentTrainees.size();
     }
 
     @Override

@@ -26,7 +26,7 @@ public class Bootcamp implements Centre {
 
     @Override
     public int getNumberOfTraineesInCentre() {
-        return numberOfTraineesInCentre;
+        return currentTrainees.size();
     }
 
     @Override
