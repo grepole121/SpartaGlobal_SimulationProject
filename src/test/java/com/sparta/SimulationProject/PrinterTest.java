@@ -25,7 +25,7 @@ public class PrinterTest {
         HashMap<Integer, int[]> result = new HashMap<>();
         result.put(1, new int[]{1, 2, 3, 4});
         String text = SystemLambda.tapSystemOut(() -> {
-            Printer.print(result);
+            Printer.print();
         });
         Assertions.assertEquals("---Month 1---\r\n" +
                 "Open Centres: 1\r\n" +

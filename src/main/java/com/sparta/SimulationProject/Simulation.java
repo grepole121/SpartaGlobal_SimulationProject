@@ -153,6 +153,14 @@ public class Simulation {
                     trainingCentreList.remove(i);
                 }
             }
+            int[] traineesInEach = new int[3];
+            for(Centre centre : trainingCentreList)
+            {
+                //this part will get the trainees per centre
+                traineesInEach[centre.getCentreType().ordinal()] += centre.getNumberOfTraineesInCentre();
+
+            }
+
             totalCentresOpen = Arrays.copyOf(totalCentresOpenT, 3);
             totalCentresClosed = Arrays.copyOf(totalCentresClosedT, 3);
             int[] traineesOnWaitingList = new int[5];
@@ -179,6 +187,10 @@ public class Simulation {
             HashMap<Integer, int[]> waitingListTraineeCount = new HashMap<>();
             waitingListTraineeCount.put(month, traineesOnWaitingList);
             FinalData.addToTraineesOnWaitingList(waitingListTraineeCount);
+            HashMap<Integer, int[]> addToTraineesPerCentreType = new HashMap<>();
+            addToTraineesPerCentreType.put(month, traineesInEach);
+            FinalData.addToTraineesPerCentreType(addToTraineesPerCentreType);
+            Printer.printMonth();
         }
     }
 }

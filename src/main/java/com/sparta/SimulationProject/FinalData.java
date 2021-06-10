@@ -1,5 +1,7 @@
 package com.sparta.SimulationProject;
 
+import com.sparta.SimulationProject.Model.Trainee;
+
 import java.util.HashMap;
 
 public class FinalData {
@@ -12,6 +14,8 @@ public class FinalData {
     private static final HashMap<Integer, int[]> traineesTraining = new HashMap<>();
 
     private static final HashMap<Integer, int[]> traineesOnWaitingList = new HashMap<>();
+
+    private static final HashMap<Integer, int[]> traineesCourseTypes = new HashMap<>();
 
     public static HashMap<Integer, int[]> getClosedCentres() {
 
@@ -71,7 +75,13 @@ public class FinalData {
     public static void addToTraineesOnWaitingList(HashMap<Integer, int[]> traineesOnWaitingListInput) {
         traineesOnWaitingList.putAll(traineesOnWaitingListInput);
     }
-
+    public static void addToTraineesPerCentreType(HashMap<Integer, int[]> traineeTypes) {
+        traineesCourseTypes.putAll(traineeTypes);
+    }
+    public static int[] getToTraineesPerCentreType(int i) {
+        int[] dataForMonth = traineesCourseTypes.get(i);
+        return dataForMonth;
+    }
 
 }
 
