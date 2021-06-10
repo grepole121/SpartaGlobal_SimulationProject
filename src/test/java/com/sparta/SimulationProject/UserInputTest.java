@@ -10,7 +10,7 @@ public class UserInputTest {
 
     @Test
     @DisplayName("Test to see if scanner can read in an int")
-    public void shouldReturnInput () {
+    public void shouldReturnInput() {
         String simulatedUserInput = "10";
         ByteArrayInputStream in = new ByteArrayInputStream(simulatedUserInput.getBytes());
         System.setIn(in);

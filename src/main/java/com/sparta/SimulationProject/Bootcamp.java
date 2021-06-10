@@ -10,12 +10,13 @@ import java.util.List;
 
 public class Bootcamp implements Centre {
 
-    private int numberOfTraineesInCentre = 0;
+    private final int numberOfTraineesInCentre = 0;
     private final int MAX_CAPACITY = 500;
     private final CentreType centreType = CentreType.BOOTCAMP;
     private int counterLowCapacity = 0;
     private boolean full = false;
-    private List<Trainee> currentTrainees = new ArrayList<>();
+    private final List<Trainee> currentTrainees = new ArrayList<>();
+
     public Bootcamp() {
     }
 
@@ -49,13 +50,13 @@ public class Bootcamp implements Centre {
         this.full = full;
     }
 
-    public boolean lowCapacity(){
-        if(numberOfTraineesInCentre < 10 && counterLowCapacity == 3){
+    public boolean lowCapacity() {
+        if (numberOfTraineesInCentre < 10 && counterLowCapacity == 3) {
             return true;
         } else if (currentTrainees.size() < 10) {
             counterLowCapacity++;
         } else {
-            counterLowCapacity =0;
+            counterLowCapacity = 0;
         }
         return false;
     }

@@ -14,7 +14,7 @@ public class TrainingHub implements Centre {
     private final int MAX_CAPACITY = 100;
     private final CentreType centreType = CentreType.TRAININGHUB;
     private boolean full = false;
-    private List<Trainee> currentTrainees = new ArrayList<>();
+    private final List<Trainee> currentTrainees = new ArrayList<>();
 
     @Override
     public int getMAX_CAPACITY() {
@@ -35,6 +35,7 @@ public class TrainingHub implements Centre {
     public void addTrainees(Trainee traineesEnrolled) {
         currentTrainees.add(traineesEnrolled);
     }
+
     @Override
     public boolean isFull() {
         return full;

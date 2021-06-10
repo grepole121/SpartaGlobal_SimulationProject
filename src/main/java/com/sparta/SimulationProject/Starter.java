@@ -30,7 +30,7 @@ public class Starter {
         Simulation sim = new Simulation();
         //HashMap<Integer, int[]> data = sim.runSimulation(time);
         sim.runSimulation(time);
-        HashMap<Integer,int[]> output= FinalData.getTraineesTraining();
+        HashMap<Integer, int[]> output = FinalData.getTraineesTraining();
         Printer.print(output);
 
         boolean finalMonth = false;

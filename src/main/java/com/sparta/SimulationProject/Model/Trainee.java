@@ -11,6 +11,6 @@ public class Trainee {
 
     public Trainee(int traineeId, CourseType courseType) {
         this.courseType = courseType;
-        this.traineeId=traineeId;
+        this.traineeId = traineeId;
     }
 }
