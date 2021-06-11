@@ -30,7 +30,6 @@ public class PrinterTest {
         Assertions.assertEquals("---Month 1---\r\n" +
                 "Open Centres: 1\r\n" +
                 "Full Centres: 2\r\n" +
-                "Trainees in Training: 3\r\n" +
-                "Trainees on the Waiting List: 4", text.trim());
+                "Trainees in Training: 3", text.trim());
     }
 }
