@@ -1,4 +1,4 @@
-package com.sparta.SimulationProject;
+package com.sparta.SimulationProject.View;
 
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -6,7 +6,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class StartGUI {
-    protected void generateView(Stage primaryStage, Scene scene) throws IOException {
+    public void generateView(Stage primaryStage, Scene scene) throws IOException {
 
         primaryStage.setTitle("Sparta Simulation");
         primaryStage.setScene(scene);

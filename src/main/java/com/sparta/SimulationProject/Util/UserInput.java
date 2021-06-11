@@ -1,4 +1,4 @@
-package com.sparta.SimulationProject;
+package com.sparta.SimulationProject.Util;
 
 import java.util.Scanner;
 

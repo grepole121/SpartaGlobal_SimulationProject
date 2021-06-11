@@ -1,6 +1,9 @@
-package com.sparta.SimulationProject;
+package com.sparta.SimulationProject.Util;
+
 
 import com.sparta.SimulationProject.Model.*;
+import com.sparta.SimulationProject.Model.TechCentre;
+import com.sparta.SimulationProject.Model.TrainingHub;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,7 +11,7 @@ import java.util.Random;
 
 public class RandomGenerator {
 
-    static int numberOfBootcamps = 0;
+    public static int numberOfBootcamps = 0;
 
 
     public static int randomTraineeIntake() {

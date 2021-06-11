@@ -1,20 +1,21 @@
-package com.sparta.SimulationProject;
+package com.sparta.SimulationProject.Model;
 
 import com.sparta.SimulationProject.Model.Centre;
 import com.sparta.SimulationProject.Model.CentreType;
 import com.sparta.SimulationProject.Model.CourseType;
 import com.sparta.SimulationProject.Model.Trainee;
+import com.sparta.SimulationProject.Util.RandomGenerator;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class TrainingHub implements Centre {
 
+    private int numberOfTraineesInCentre;
     private final int MAX_CAPACITY = 100;
     private final CentreType centreType = CentreType.TRAININGHUB;
-    private final List<Trainee> currentTrainees = new ArrayList<>();
-    private int numberOfTraineesInCentre;
     private boolean full = false;
+    private final List<Trainee> currentTrainees = new ArrayList<>();
 
     @Override
     public int getMAX_CAPACITY() {
@@ -61,7 +62,6 @@ public class TrainingHub implements Centre {
     public CourseType getCourseType() {
         return null;
     }
-
     @Override
     public List<Trainee> getTrainees() {
         return currentTrainees;

@@ -1,16 +1,19 @@
-package com.sparta.SimulationProject;
+package com.sparta.SimulationProject.Model;
 
 import com.sparta.SimulationProject.Model.Centre;
 import com.sparta.SimulationProject.Model.CentreType;
+import com.sparta.SimulationProject.Model.FinalData;
 import com.sparta.SimulationProject.Model.Trainee;
+import com.sparta.SimulationProject.Util.RandomGenerator;
+import com.sparta.SimulationProject.Util.Printer;
 
 import java.util.*;
 
 public class Simulation {
 
+    int i;
     private final List<Centre> trainingCentreList = new ArrayList<>();
     private final LinkedList<Trainee> waitingList = new LinkedList<>();
-    int i;
     int[] traineesTraining = new int[5];
 
 
@@ -156,7 +159,8 @@ public class Simulation {
                 }
             }
             int[] traineesInEach = new int[3];
-            for (Centre centre : trainingCentreList) {
+            for(Centre centre : trainingCentreList)
+            {
                 //this part will get the trainees per centre
                 traineesInEach[centre.getCentreType().ordinal()] += centre.getNumberOfTraineesInCentre();
 

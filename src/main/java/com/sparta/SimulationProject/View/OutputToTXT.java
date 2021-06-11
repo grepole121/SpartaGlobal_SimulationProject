@@ -1,8 +1,8 @@
-package com.sparta.SimulationProject;
+package com.sparta.SimulationProject.View;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
+import com.sparta.SimulationProject.Util.Printer;
+
+import java.io.*;
 
 public class OutputToTXT {
 

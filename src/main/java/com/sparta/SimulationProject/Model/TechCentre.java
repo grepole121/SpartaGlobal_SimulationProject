@@ -1,21 +1,22 @@
-package com.sparta.SimulationProject;
+package com.sparta.SimulationProject.Model;
 
 import com.sparta.SimulationProject.Model.Centre;
 import com.sparta.SimulationProject.Model.CentreType;
 import com.sparta.SimulationProject.Model.CourseType;
 import com.sparta.SimulationProject.Model.Trainee;
+import com.sparta.SimulationProject.Util.RandomGenerator;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class TechCentre implements Centre {
 
+    private int numberOfTraineesInCentre;
     private final int MAX_CAPACITY = 200;
     private final CentreType centreType = CentreType.TECHCENTRE;
     private final CourseType courseType;
-    private final List<Trainee> currentTrainees = new ArrayList<>();
-    private int numberOfTraineesInCentre;
     private boolean full = false;
+    private final List<Trainee> currentTrainees = new ArrayList<>();
 
 
     public TechCentre(CourseType courseType) {
