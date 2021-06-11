@@ -43,7 +43,7 @@ Upon starting the program the UI will open and have two drop-down boxes that wil
 	
 #### Trainee
 	
-	| Return Type  	| Call Method     	| Description                                  	|
+| Return Type  	| Call Method     	| Description                                  	|
 |--------------	|-----------------	|----------------------------------------------	|
 | CourseType   	| getCourseType() 	| Returns the coursetype of the trainee object 	|
 	
