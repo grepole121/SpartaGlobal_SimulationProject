@@ -3,7 +3,7 @@
 
 #### intro
 
-The aim of the project was to provide working software that could help predict future growth of Sparta Global. the project could be used to help better inform decsions regarding the future. it had to be able to simualte a given duration of time and output the results in a way that is both readable and desired by the product owner
+The aim of the project was to provide working software that could help predict future growth of Sparta Global. the project could be used to help better inform decsions regarding the future. it had to be able to simualte a given duration of time and output the results in a way that is both readable and desireable by the product owner
 
 #### Tools and techniques used in the simulation project
 the tools used by the team include
